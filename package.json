@@ -1,0 +1,24 @@
+{
+  "name": "Cosplay-shop-capstone",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diazgio/Cosplay-shop-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diazgio/Cosplay-shop-capstone/issues"
+  },
+  "homepage": "https://github.com/diazgio/Cosplay-shop-capstone#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
