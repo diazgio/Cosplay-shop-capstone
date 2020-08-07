@@ -1,0 +1,65 @@
+@import 'variables';
+
+.header {
+    background-color: $thirdcolor;
+    font-family: $Secondfont;
+    
+    .header-container {
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2.2rem;
+        width: $desktopwidth;
+    }
+
+    .logo-header {
+        align-items: center;
+        
+        .logo-img {
+            width: 12rem;
+            height: 6rem;
+            margin: 1rem;
+        }
+    }
+
+
+    .navbar-header {
+        align-items: center;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: auto 1rem;
+        }
+
+        .home-header {
+            color: $primarycolor;
+        }
+
+        .navbar-items, .navbar-items:visited, .navbar-items:link {
+            color: $secondarycolor;
+        }
+    }
+
+    .header-container-right {
+        justify-content: space-around;
+        align-items: center;
+        
+        a, a:visited, a:link {
+            padding: 0 1rem;
+            color: $secondarycolor;
+            text-decoration: none;
+        }
+
+        .User {
+            font-size: 4rem;
+        }
+    }
+
+}

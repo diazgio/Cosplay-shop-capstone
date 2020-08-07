@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main-style.css">
+    <link rel="icon" type="image/svg" href="./src/img/logo.svg">
+    <script src="https://kit.fontawesome.com/e4c4b9b250.js" crossorigin="anonymous"></script>
+    <title>Nyanta-Sama</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header-container flex">
+            <div class="header-container-left flex">
+                <div class="logo-header flex">
+                    <img src="./src/img/logo-header1.png" class="logo-img" alt="logo-header">
+                </div>
+                <nav class="navbar-header flex">
+                    <ul class="flex">
+                        <li><a href="#" class="home-header"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#" class="navbar-items"><i class="fas fa-border-all"></i> Styles</a></li>
+                        <li><a href="#" class="navbar-items"><i class="fas fa-cart-arrow-down"></i> Purchase List</a></li>
+                        <li><a href="./search.html" class="navbar-items">Post and Ad</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-container-right flex">
+                <a href="#"><i class="fas fa-comment"></i></a>
+                <a href="#">SING UP</a>
+                <a href="#"><i class="fas fa-user-circle User"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-title">
+            <h1>Nyanta-Sama</h1>
+            <p>Creating your own and exotic style of Cosplay in just one place and from Home</p>
+        </div>
+        <nav class="navbar-hero flex">
+            <div class="inputs-hero flex">
+                <a href="#" class="styles-input-hero"><i class="fas fa-caret-down"></i>All Styles Costumes</a>
+                <input type="text" placeholder="What do you search for?">
+                <input type="text" placeholder="Location">
+            </div>
+            <a href="#" class="search-button-hero">Search</a>
+        </nav>
+    </section>
+
+    <main class="main">
+        <section class="hot-ads">
+            <div class="hot-ads-title">
+                <h2>HOT ADS</h2>
+            </div>
+            <div class="hot-container  flex">
+                <div class="hot-arrow">
+                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                </div>
+                <div class="hot-ads-info flex">
+                    <div class="hot-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                    </div>
+                    <div class="hot-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div>
+                            <p>By: <a href="#" class="description-a">Jorge Clone</a></p>
+                            <p>Location: <a href="#"class="description-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-description">
+                            <a href="#" class="buttons-a">56.99$</a>
+                            <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase detaile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot-arrow">
+                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="anime-costumes">
+            <div class="flex">
+                <h2>Anime Costumes</h2>
+                <p>(Complete body costumes without wigs)</p>
+            </div>
+            <div class="flex">
+                <div>
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="./src/img/anime-2.jpg" alt="anime2">
+                        </div>
+                        <div>
+                            <h4>cosplay</h4>
+                            <p>Free Shipping</p>
+                            <p>From: Peru</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <p>precio $</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

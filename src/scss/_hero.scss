@@ -1,0 +1,70 @@
+@import 'variables';
+
+.hero {
+    background-color: $primarycolor;
+    background-image: url(../img/logo-header.png);
+    background-repeat: no-repeat;
+    background-position-x: 10rem;
+    padding: 10rem 0;
+    text-align: center;
+
+    .hero-title {
+        color: white;
+        margin-bottom: 5rem;
+        width: $desktopwidth;
+
+        h1 {
+            font-family: $firstfont;
+            font-size: 7rem;
+        }
+        p {
+            font-family: $thirdfont;
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .navbar-hero {
+        justify-content: center;
+        align-items: center;
+        width: $desktopwidth;
+    }
+
+    .inputs-hero {
+        margin: 0;
+        height: fit-content;
+        align-items: center;
+        input {
+            padding: 1rem;
+            margin: 0;
+            outline: none;
+            width: 30rem;
+        }
+    }
+
+    .styles-input-hero {
+        background-color: white;
+        width: 20rem;
+        height: 100%;
+        padding: 1.3rem;
+        margin: 0;
+        text-decoration: none;
+        color: $secondarycolor;
+
+        i {
+            color: $thirdcolor;
+            padding: 0 0.5rem;
+        }
+    }
+
+    .search-button-hero {
+        margin: 0 0 0 2rem;
+        background-color: $thirdcolor;
+        width: 10rem;
+        height: 100%;
+        padding: 1.3rem;
+        text-decoration: none;
+        color: $secondarycolor;
+    }
+
+}

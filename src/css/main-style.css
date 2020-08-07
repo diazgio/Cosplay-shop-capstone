@@ -1,1 +1,225 @@
-/* No CSS *//*# sourceMappingURL=main-style.css.map */
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+.header {
+  background-color: #383838;
+  font-family: Helvetica, sans-serif;
+}
+.header .header-container {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  width: 85%;
+}
+.header .logo-header {
+  align-items: center;
+}
+.header .logo-header .logo-img {
+  width: 12rem;
+  height: 6rem;
+  margin: 1rem;
+}
+.header .navbar-header {
+  align-items: center;
+  text-transform: uppercase;
+}
+.header .navbar-header a {
+  text-decoration: none;
+}
+.header .navbar-header ul {
+  list-style: none;
+}
+.header .navbar-header li {
+  margin: auto 1rem;
+}
+.header .navbar-header .home-header {
+  color: #D35266;
+}
+.header .navbar-header .navbar-items, .header .navbar-header .navbar-items:visited, .header .navbar-header .navbar-items:link {
+  color: #888888;
+}
+.header .header-container-right {
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header-container-right a, .header .header-container-right a:visited, .header .header-container-right a:link {
+  padding: 0 1rem;
+  color: #888888;
+  text-decoration: none;
+}
+.header .header-container-right .User {
+  font-size: 4rem;
+}
+
+.hero {
+  background-color: #D35266;
+  background-image: url(../img/logo-header.png);
+  background-repeat: no-repeat;
+  background-position-x: 10rem;
+  padding: 10rem 0;
+  text-align: center;
+}
+.hero .hero-title {
+  color: white;
+  margin-bottom: 5rem;
+  width: 85%;
+}
+.hero .hero-title h1 {
+  font-family: Gotham;
+  font-size: 7rem;
+}
+.hero .hero-title p {
+  font-family: Gotham Rounded;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.hero .navbar-hero {
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.hero .inputs-hero {
+  margin: 0;
+  height: fit-content;
+  align-items: center;
+}
+.hero .inputs-hero input {
+  padding: 1rem;
+  margin: 0;
+  outline: none;
+  width: 30rem;
+}
+.hero .styles-input-hero {
+  background-color: white;
+  width: 20rem;
+  height: 100%;
+  padding: 1.3rem;
+  margin: 0;
+  text-decoration: none;
+  color: #888888;
+}
+.hero .styles-input-hero i {
+  color: #383838;
+  padding: 0 0.5rem;
+}
+.hero .search-button-hero {
+  margin: 0 0 0 2rem;
+  background-color: #383838;
+  width: 10rem;
+  height: 100%;
+  padding: 1.3rem;
+  text-decoration: none;
+  color: #888888;
+}
+
+.main {
+  background-color: #fcfcfc;
+}
+.main .hot-ads {
+  width: 85%;
+}
+.main .hot-ads .hot-container {
+  align-items: center;
+}
+.main .hot-ads .hot-ads-title {
+  width: 70%;
+  padding: 2rem 0;
+}
+.main .hot-ads .hot-ads-title h2 {
+  color: #888888;
+}
+.main .hot-ads .hot-arrow {
+  width: 5.5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 1px solid #888888;
+  border-radius: 50%;
+  position: relative;
+}
+.main .hot-ads .hot-arrow i {
+  color: #D35266;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .hot-ads .hot-ads-info {
+  width: 70%;
+  margin: 0;
+  border: 0.1rem solid #888888;
+  box-shadow: 0.3rem 0.5rem rgba(136, 128, 128, 0.1);
+}
+.main .hot-ads .hot-ads-info .hot-img {
+  height: 30rem;
+  width: 60rem;
+}
+.main .hot-ads .hot-ads-info .hot-img img {
+  width: 100%;
+  height: 100%;
+}
+.main .hot-ads .hot-ads-info .hot-description {
+  padding: 1rem 3rem;
+}
+.main .hot-ads .hot-ads-info .hot-description h3 {
+  color: #D35266;
+  font-size: 2rem;
+}
+.main .hot-ads .hot-ads-info .hot-description p {
+  width: 100%;
+  text-align: start;
+  margin: 0;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: #888888;
+}
+.main .hot-ads .hot-ads-info .hot-description .description-a {
+  text-decoration: none;
+  color: #888888;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.main .hot-ads .hot-ads-info .hot-description .buttons-description {
+  padding-top: 2rem;
+}
+.main .hot-ads .hot-ads-info .hot-description .buttons-a {
+  background-color: #D35266;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 0.4rem;
+}
+.main .hot-ads .hot-ads-info .hot-description .description-a:visited,
+.main .hot-ads .hot-ads-info .hot-description .description-a:link {
+  text-decoration: none;
+  color: #888888;
+}
+.main .hot-ads .hot-ads-info .hot-description .buttons-a:visited,
+.main .hot-ads .hot-ads-info .hot-description .buttons-a:link {
+  text-decoration: none;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px -> 1rem */
+}
+
+.flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=main-style.css.map */

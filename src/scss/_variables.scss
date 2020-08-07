@@ -1,0 +1,22 @@
+//widths
+
+//After 768px
+$desktopwidth: 85%;
+//Before 768px
+$movilwidth:100%;
+
+
+// Colors
+$primarycolor: #D35266;
+$secondarycolor: #888888;
+$thirdcolor: #383838;
+$fourthcolor: #fcfcfc;
+
+
+//Typography
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+
+$firstfont: Gotham;
+$Secondfont: Helvetica, sans-serif;
+$thirdfont: Gotham Rounded;
