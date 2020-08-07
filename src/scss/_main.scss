@@ -5,6 +5,7 @@
     
     .hot-ads {
         width: $desktopwidth;
+        padding-bottom: 3rem;
 
         .hot-container {
             align-items: center;
@@ -38,15 +39,31 @@
         .hot-ads-info {
             width: 70%;
             margin: 0;
-            border: 0.1rem solid $secondarycolor;
-            box-shadow: 0.3rem 0.5rem rgba($color: #888080, $alpha: 0.1);
+            border-bottom: 0.1rem solid $secondarycolor;
+            border-right: 0.1rem solid $secondarycolor;
+            box-shadow: 1rem 0.5rem rgba($color: #888080, $alpha: 0.1);
 
             .hot-img {
                 height: 30rem;
                 width: 60rem;
+                position: relative;
                 img {
                     width: 100%;
                     height: 100%;
+                }
+
+                .img-arrow{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background-color: $thirdcolor;
+                    padding: 1rem 1.6rem;
+
+                    i{
+                        color: $primarycolor;
+                        padding: 0 0.8rem;
+                        font-size: 2.5rem;
+                    }
                 }
             }
 
@@ -101,6 +118,83 @@
             }
         }
 
+    }
+
+    .styles-section {
+        background-color: $fifthcolor;
+        padding: 3rem 0;
+
+        .carrousel{
+            align-items: center;
+            padding: 2rem 0;
+            
+            .carrousel-arrow {
+                font-size: 3.5rem;
+            }
+
+            .carrousel-container {
+    
+                .item-carrousel {
+                    border: 1px solid $secondarycolor;
+                    background-color: white;
+                    width: 20.2rem;
+    
+                    .img-carrousel {
+                        img {
+                            width: 20rem;
+                        }
+                    }
+
+                    .carrousel-description {
+                        text-align: start;
+                        padding: 1rem;
+
+                        h4{
+                            font-size: 1.7rem;
+                            color: $thirdcolor;
+                        }
+
+                        p {
+                            color: $primarycolor;
+                            font-weight: bold;
+                            margin: 0.5rem 0;
+                        }
+
+                        span {
+                            color: $thirdcolor;
+                        }
+                        
+                    }
+
+                    .buttons-carrousel {
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .plus,
+                        .precio-b {
+                            margin: 1rem 1rem;
+                        }
+
+                        .plus {
+                            background-color: transparent;
+                            border: 1px solid $secondarycolor;
+                            i {
+                                color: $secondarycolor;
+                                padding: 1.5rem;
+                            }
+                        }
+
+                        .precio-b {
+                            color: $primarycolor;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+            }
+
+        }
 
     }
 }
