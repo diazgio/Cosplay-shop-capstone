@@ -123,76 +123,145 @@
     .styles-section {
         background-color: $fifthcolor;
         padding: 3rem 0;
+        height: 45rem;
+        width: $desktopwidth;
 
         .carrousel{
             align-items: center;
             padding: 2rem 0;
-            
+            position: relative;
+            height: 91.5%;
+
+            input {
+                display: none;
+            }
+
+            .slide_img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+
+                .carrousel-container {
+                    // position: absolute;
+                    // top: 0;
+                    .item-carrousel {
+                        border: 1px solid $secondarycolor;
+                        background-color: white;
+                        width: 20.2rem;
+        
+                        .img-carrousel {
+                            img {
+                                width: 20rem;
+                                height: 20rem;
+                            }
+                        }
+    
+                        .carrousel-description {
+                            text-align: start;
+                            padding: 1rem;
+    
+                            h4{
+                                font-size: 1.7rem;
+                                color: $thirdcolor;
+                            }
+    
+                            p {
+                                color: $primarycolor;
+                                font-weight: bold;
+                                margin: 0.5rem 0;
+                            }
+    
+                            span {
+                                color: $thirdcolor;
+                            }
+                            
+                        }
+    
+                        .buttons-carrousel {
+                            justify-content: space-between;
+                            align-items: center;
+    
+                            .plus,
+                            .precio-b {
+                                margin: 1rem 1rem;
+                            }
+    
+                            .plus {
+                                background-color: transparent;
+                                border: 1px solid $secondarycolor;
+                                i {
+                                    color: $secondarycolor;
+                                    padding: 1.5rem;
+                                }
+                            }
+    
+                            .precio-b {
+                                color: $primarycolor;
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                            }
+                        }
+    
+                    }
+    
+                }
+
+                .prev, .next {
+                    width: $big_nav_width;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    background-color: $nav_color;
+                    z-index: 99;
+                    transition: .45s;
+                    cursor: pointer;
+                    text-align: center;
+                }
+
+                .next {
+                    right: 0;
+                }
+                .prev {
+                    left: 0;
+                }
+        
+                .prev:hover, .next:hover {
+                    transition: .3s;
+                    background-color: $nav_hover_color;
+                }
+        
+                .prev span, .next span {
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border: solid 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+        
+                .prev span {
+                    border-color: transparent $thirdcolor transparent transparent;
+                    right: 35%;
+                }
+                .next span {
+                    border-color: transparent transparent transparent $thirdcolor;
+                    left: 35%;
+                }
+            }
+
+            #i1:checked ~ #one,
+            #i2:checked ~ #two,
+            #i3:checked ~ #three {
+	            z-index: 9;
+	            animation: scroll 2s ease-in-out;
+            }
+
             .carrousel-arrow {
                 font-size: 3.5rem;
             }
 
-            .carrousel-container {
-    
-                .item-carrousel {
-                    border: 1px solid $secondarycolor;
-                    background-color: white;
-                    width: 20.2rem;
-    
-                    .img-carrousel {
-                        img {
-                            width: 20rem;
-                        }
-                    }
-
-                    .carrousel-description {
-                        text-align: start;
-                        padding: 1rem;
-
-                        h4{
-                            font-size: 1.7rem;
-                            color: $thirdcolor;
-                        }
-
-                        p {
-                            color: $primarycolor;
-                            font-weight: bold;
-                            margin: 0.5rem 0;
-                        }
-
-                        span {
-                            color: $thirdcolor;
-                        }
-                        
-                    }
-
-                    .buttons-carrousel {
-                        justify-content: space-between;
-                        align-items: center;
-
-                        .plus,
-                        .precio-b {
-                            margin: 1rem 1rem;
-                        }
-
-                        .plus {
-                            background-color: transparent;
-                            border: 1px solid $secondarycolor;
-                            i {
-                                color: $secondarycolor;
-                                padding: 1.5rem;
-                            }
-                        }
-
-                        .precio-b {
-                            color: $primarycolor;
-                            font-size: 1.5rem;
-                            font-weight: bold;
-                        }
-                    }
-
-                }
-            }
+            
 
         }
 

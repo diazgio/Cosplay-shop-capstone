@@ -12,6 +12,8 @@ $secondarycolor: #888888;
 $thirdcolor: #383838;
 $fourthcolor: #fcfcfc;
 $fifthcolor: #f6f6f6;
+$nav_color: rgba(163, 163, 163, 0.7);
+$nav_hover_color: rgb(209, 73, 107, .8);
 
 
 //Typography
@@ -21,3 +23,11 @@ $fifthcolor: #f6f6f6;
 $firstfont: Gotham;
 $Secondfont: Helvetica, sans-serif;
 $thirdfont: Gotham Rounded;
+
+// Slider
+
+$big_width: 70%; 			//Slider width - large display
+$big_height: 40%; 		//Slider height - large display
+$big_nav_width: 12%;	// Previous and Next width - large display
+
+
