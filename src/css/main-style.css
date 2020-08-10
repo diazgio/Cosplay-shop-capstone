@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 2.2rem;
-  width: 85%;
+  width: 70%;
 }
 .header .logo-header {
   align-items: center;
@@ -65,7 +65,7 @@
 .hero .hero-title {
   color: white;
   margin-bottom: 5rem;
-  width: 85%;
+  width: 70%;
 }
 .hero .hero-title h1 {
   font-family: Gotham;
@@ -79,7 +79,7 @@
 .hero .navbar-hero {
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 70%;
 }
 .hero .inputs-hero {
   margin: 0;
@@ -119,7 +119,7 @@
   background-color: #fcfcfc;
 }
 .main .hot-ads {
-  width: 85%;
+  width: 70%;
   padding-bottom: 3rem;
 }
 .main .hot-ads .hot-container {
@@ -208,6 +208,8 @@
   margin-top: 2rem;
   padding: 1rem 3rem;
   border-radius: 0.4rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .main .hot-ads .hot-ads-info .hot-description .description-a:visited,
 .main .hot-ads .hot-ads-info .hot-description .description-a:link {
@@ -223,7 +225,40 @@
   background-color: #f6f6f6;
   padding: 3rem 0;
   height: 45rem;
-  width: 85%;
+  width: 70%;
+}
+.main .styles-section .title-section {
+  align-items: center;
+  justify-content: start;
+  margin: 0 4rem;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.7);
+}
+.main .styles-section .title-section h2 {
+  margin: 0;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 1.7rem;
+}
+.main .styles-section .title-section h2 i {
+  padding-right: 1rem;
+}
+.main .styles-section .title-section p {
+  margin: 0 0.5rem;
+  color: #888888;
+  padding: 1rem 0;
+}
+.main .styles-section .View-title {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+.main .styles-section .View-title a {
+  text-decoration: none;
+  color: #D35266;
+  font-family: Gotham;
+}
+.main .styles-section .View-title a:visited,
+.main .styles-section .View-title a:link {
+  color: #D35266;
 }
 .main .styles-section .carrousel {
   align-items: center;
@@ -238,7 +273,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel {
   border: 1px solid #888888;
@@ -287,7 +322,7 @@
   font-weight: bold;
 }
 .main .styles-section .carrousel .slide_img .prev, .main .styles-section .carrousel .slide_img .next {
-  width: 12%;
+  width: 4%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -325,12 +360,143 @@
 }
 .main .styles-section .carrousel #i1:checked ~ #one,
 .main .styles-section .carrousel #i2:checked ~ #two,
-.main .styles-section .carrousel #i3:checked ~ #three {
+.main .styles-section .carrousel #i3:checked ~ #three,
+.main .styles-section .carrousel #i4:checked ~ #four,
+.main .styles-section .carrousel #i5:checked ~ #ive,
+.main .styles-section .carrousel #i6:checked ~ #six,
+.main .styles-section .carrousel #i7:checked ~ #seven,
+.main .styles-section .carrousel #i8:checked ~ #eight,
+.main .styles-section .carrousel #i9:checked ~ #nine {
   z-index: 9;
-  animation: scroll 2s ease-in-out;
+  animation: scroll 4s ease-in-out;
 }
-.main .styles-section .carrousel .carrousel-arrow {
-  font-size: 3.5rem;
+.main .first {
+  border-top: 1px solid #383838;
+}
+.main .first .title-s {
+  border-bottom: 1px solid rgba(163, 163, 163, 0.7);
+  margin: 0 4rem;
+  justify-content: space-between;
+}
+.main .first .title-section {
+  border: 0;
+}
+.main .last {
+  border-bottom: 1px solid #383838;
+  padding-bottom: 5rem;
+  height: 50rem;
+}
+.main .last .carrousel .slide_img .prev,
+.main .last .carrousel .slide_img .next {
+  height: 93.5%;
+}
+
+.footer {
+  background-color: white;
+}
+.footer .info-footer {
+  width: 70%;
+  border-top: 1px solid #888888;
+  border-bottom: 2px solid #888888;
+}
+.footer .info-footer .logo-footer {
+  width: 40%;
+  margin: 0;
+  margin-left: 5rem;
+  padding: 2rem 0;
+}
+.footer .info-footer .logo-footer .img-footer img {
+  width: 50rem;
+  height: 20rem;
+}
+.footer .info-footer .logo-footer .logo-footer-description {
+  padding: 1.5rem;
+  color: #888888;
+}
+.footer .info-footer .footer-lists {
+  width: 60%;
+  margin: 0;
+  padding: 2rem 0;
+  margin-right: 5rem;
+}
+.footer .info-footer .footer-lists .column-list .title-list {
+  color: #D35266;
+  border-bottom: 2px solid #D35266;
+}
+.footer .info-footer .footer-lists .column-list .one-list ul {
+  list-style: none;
+}
+.footer .info-footer .footer-lists .column-list .one-list ul li {
+  padding: 1rem 0;
+}
+.footer .info-footer .footer-lists .column-list .one-list ul li a {
+  text-decoration: none;
+  color: #888888;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer .info-footer .footer-lists .column-list .one-list ul li a:hover {
+  text-decoration: underline;
+  color: #D35266;
+  text-decoration-color: #D35266;
+  font-size: 2.2rem;
+}
+.footer .info-footer .footer-lists .last-list {
+  align-items: center;
+}
+.footer .info-footer .footer-lists .last-list .two-list ul {
+  list-style: none;
+}
+.footer .info-footer .footer-lists .last-list .two-list ul li {
+  padding: 2rem 0;
+}
+.footer .info-footer .footer-lists .last-list .two-list ul li .a-one {
+  text-decoration: none;
+  color: #D35266;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 50%;
+}
+.footer .info-footer .footer-lists .last-list .twopoint-list ul {
+  list-style: none;
+}
+.footer .info-footer .footer-lists .last-list .twopoint-list ul li {
+  padding: 2rem 0;
+}
+.footer .info-footer .footer-lists .last-list .twopoint-list ul li .a-two {
+  text-decoration: none;
+  color: #888888;
+  padding: 1.3rem 1.5rem;
+  border: 1px solid grey;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
+  width: 50%;
+}
+.footer .info-footer .footer-lists .last-list .twopoint-list ul li .a-two:hover {
+  font-size: 2.2rem;
+  background-color: #383838;
+  text-decoration: underline;
+  color: #D35266;
+}
+.footer .copy-right-footer {
+  width: 70%;
+  border-top: 1px solid #888888;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.footer .copy-right-footer .letters-footer {
+  margin: 0 0 0 5rem;
+  font-size: 1.7rem;
+  color: #888888;
+}
+.footer .copy-right-footer .social-links {
+  margin: 0 5rem 0 0;
+}
+.footer .copy-right-footer .social-links a {
+  padding: 1rem;
+  font-size: 4rem;
+  color: #888888;
 }
 
 *,

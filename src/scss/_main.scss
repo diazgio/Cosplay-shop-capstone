@@ -102,6 +102,8 @@
                     margin-top: 2rem;
                     padding: 1rem 3rem;
                     border-radius: 0.4rem;
+                    font-size: 2rem;
+                    font-weight: bold;
                 }
 
                 .description-a:visited,
@@ -125,8 +127,46 @@
         padding: 3rem 0;
         height: 45rem;
         width: $desktopwidth;
+        
+        .title-section {
+            align-items: center;
+            justify-content: start;
+            margin: 0 4rem;
+            border-bottom: 1px solid $nav_color;
+            
 
-        .carrousel{
+            h2 {
+                margin: 0;
+                padding: 1rem 1rem 1rem 0;
+                font-size: 1.7rem;
+                i {
+                    padding-right: 1rem;
+                }
+            }
+
+            p {
+                margin: 0 0.5rem;
+                color: $secondarycolor;
+                padding: 1rem 0;
+            }
+        }
+        
+        .View-title {
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: $primarycolor;
+                font-family: $firstfont;
+            }
+            a:visited,
+            a:link {
+                color: $primarycolor;
+            }
+        }
+
+        .carrousel {
             align-items: center;
             padding: 2rem 0;
             position: relative;
@@ -140,11 +180,9 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                z-index: -1;
+                z-index: 1;
 
                 .carrousel-container {
-                    // position: absolute;
-                    // top: 0;
                     .item-carrousel {
                         border: 1px solid $secondarycolor;
                         background-color: white;
@@ -252,18 +290,181 @@
 
             #i1:checked ~ #one,
             #i2:checked ~ #two,
-            #i3:checked ~ #three {
-	            z-index: 9;
-	            animation: scroll 2s ease-in-out;
-            }
-
-            .carrousel-arrow {
-                font-size: 3.5rem;
-            }
-
-            
+            #i3:checked ~ #three,
+            #i4:checked ~ #four,
+            #i5:checked ~ #ive,
+            #i6:checked ~ #six,
+            #i7:checked ~ #seven,
+            #i8:checked ~ #eight,
+            #i9:checked ~ #nine {
+                z-index: 9;
+	            animation: scroll 4s ease-in-out;
+            }          
 
         }
 
+    }
+
+    .first {
+        border-top: 1px solid $thirdcolor;
+        .title-s {
+            border-bottom: 1px solid $nav_color;
+            margin: 0 4rem;
+            justify-content: space-between;
+        }
+        .title-section {
+            border: 0;
+        }
+    }
+
+    .last {
+        border-bottom: 1px solid $thirdcolor;
+        padding-bottom: 5rem;
+        height: 50rem;
+
+        .carrousel {
+            .slide_img {
+                .prev,
+                .next {
+                    height: 93.5%;
+                }
+            }
+        }
+
+    }
+
+}
+
+.footer {
+    background-color: white;
+    
+    .info-footer {
+        width: $desktopwidth;
+        border-top: 1px solid $secondarycolor;
+        border-bottom: 2px solid $secondarycolor;
+
+        .logo-footer {
+            width: 40%;
+            margin: 0;
+            margin-left: 5rem;
+            padding: 2rem 0;
+
+            .img-footer {
+                img {
+                    width: 50rem;
+                    height: 20rem;
+                }
+            }
+
+            .logo-footer-description {
+                padding: 1.5rem;
+                color: $secondarycolor;
+            }
+            
+        }
+
+        .footer-lists {
+            width: 60%;
+            margin: 0;
+            padding: 2rem 0;
+            margin-right: 5rem;
+
+            .column-list {
+                .title-list{
+                    color: $primarycolor;
+                    border-bottom: 2px solid $primarycolor;
+                }
+
+                .one-list {
+                    ul {
+                        list-style: none;
+                        li {
+                            padding: 1rem 0;
+                            a {
+                                text-decoration: none;
+                                color: $secondarycolor;
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                            }
+
+                            a:hover {
+                                text-decoration: underline;
+                                color: $primarycolor;
+                                text-decoration-color: $primarycolor;
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+            .last-list{
+                align-items: center;
+                .two-list {
+                    ul {
+                        list-style: none;
+                        li {
+                            padding: 2rem 0;
+                            .a-one {
+                                text-decoration: none;
+                                color: $primarycolor;
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                                width: 50%;
+                            }
+
+                        }
+                    }
+                }
+
+                .twopoint-list {
+                    ul {
+                        list-style: none;
+                        li{
+                           padding: 2rem 0;
+                           .a-two {
+                            text-decoration: none;
+                            color: $secondarycolor;
+                            padding: 1.3rem 1.5rem;
+                            border: 1px solid grey;
+                            border-radius: 0.4rem;
+                            margin-left: 1rem;
+                            width: 50%;
+                            }
+                            .a-two:hover {
+                                font-size: 2.2rem;
+                                background-color:$thirdcolor;
+                                text-decoration: underline;
+                                color: $primarycolor;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-right-footer{
+        width: $desktopwidth;
+        border-top: 1px solid $secondarycolor;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+        .letters-footer {
+            margin: 0 0 0 5rem;
+            font-size: 1.7rem;
+            color: $secondarycolor;
+        }
+
+        .social-links {
+            margin: 0 5rem 0 0; 
+            a {
+                padding: 1rem;
+                font-size: 4rem;
+                color: $secondarycolor;
+            }
+        }
+        
     }
 }
