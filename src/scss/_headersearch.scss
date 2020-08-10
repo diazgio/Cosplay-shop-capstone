@@ -7,7 +7,7 @@
     .headers-container {
         align-items: center;
         justify-content: space-between;
-        font-size: 2.2rem;
+        font-size: 1.7rem;
         width: $desktopwidth;
     }
 
@@ -37,6 +37,9 @@
 
         li {
             margin: auto 1rem;
+            i {
+                margin-right: 1rem;
+            }
         }
 
         
@@ -87,4 +90,80 @@
         }
     }
 
+}
+
+
+@media screen and (min-width: 1089px) and (max-width: 1440px) {
+    .headers {
+        .headers-container {
+            font-size: 1.3rem;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1088px){
+    .headers {
+        .headers-container {
+            font-size: 1rem;
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (min-width: 483px) and (max-width: 767px) {
+    .headers {
+        .headers-container {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            font-size: 0.8rem;
+            width: $movilwidth;
+            .headers-container-left {
+                .navbar-headers {
+                    ul {
+                        flex-wrap: wrap;
+                        li {
+                            padding-bottom: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .headers-container-right {
+                margin-left: 15rem;
+                margin-bottom: 2rem;
+                .User {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 483px) {
+    .headers {
+        .headers-container {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            font-size: 0.8rem;
+            width: $movilwidth;
+            .headers-container-left {
+                .navbar-headers {
+                    ul {
+                        flex-wrap: wrap;
+                        li {
+                            padding: 1.5rem;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .headers-container-right {
+                margin-left: 15rem;
+                margin-bottom: 2rem;
+                .User {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
