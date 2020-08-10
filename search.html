@@ -9,27 +9,404 @@
     <title>Nyanta-Sama</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-container flex">
-            <div class="header-container-left flex">
-                <div class="logo-header flex">
+    <header class="headers">
+        <div class="headers-container flex">
+            <div class="headers-container-left flex">
+                <div class="logo-headers flex">
                     <img src="./src/img/logo-header1.png" class="logo-img" alt="logo-header">
                 </div>
-                <nav class="navbar-header flex">
+                <nav class="navbar-headers flex">
                     <ul class="flex">
-                        <li><a href="./index.html" class="home-header"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="./index.html" class="home-headers"><i class="fas fa-home"></i> Home</a></li>
                         <li><a href="#" class="navbar-items">Styles</a></li>
                         <li><a href="#" class="navbar-items">Purchase List</a></li>
-                        <li><a href="./search.html" class="navbar-items">Post and Ad</a></li>
+                        <li><a href="./search.html" class="search-headers">Post and Ad</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="header-container-right flex">
+            <div class="headers-container-right flex">
                 <a href="#"><i class="fas fa-comment"></i></a>
                 <a href="#">SING UP</a>
                 <a href="#"><i class="fas fa-user-circle User"></i></a>
             </div>
         </div>
     </header>
+
+    <section class="hero-search">
+        <div class="hero-search-title">
+            <h1>Nyanta-Sama</h1>
+            <p>Search around 124 000 items are waiting to go with YOU!</p>
+        </div>
+        <nav class="navbar-hero-search flex">
+            <div class="inputs-hero flex">
+                <a href="#" class="styles-input-hero"><i class="fas fa-caret-down"></i>Anime Costumes</a>
+                <input type="text" placeholder="What do you search for?">
+                <input type="text" placeholder="Location">
+            </div>
+            <a href="#" class="search-button-hero">Search</a>
+        </nav>
+    </section>
+
+    <main class="main-search">
+        <div class="main-search-container flex">
+            <div class="filters">
+                <div class="filters-control">
+                    <h3>FILTER</h3>
+                    <div>
+                        <h4>GENDER</h4>
+                        <div class="gender">
+                            <div>
+                                <input type="checkbox" id="genderM">
+                                <label for="genderM">Male</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="genderF">
+                                <label for="genderF">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>SIZE</h4>
+                    <div class="size">
+                        <div>
+                            <div>
+                                <input type="checkbox" id="xs">
+                                <label for="genderM">Extra-Small SM</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="s">
+                                <label for="genderM">Small S</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="m">
+                                <label for="genderM">Medium M</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="l">
+                                <label for="genderM">Large L</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="xl">
+                                <label for="genderM">Extra-Large XL</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>PRICE RANGE</h4>
+                    <div class="price">
+                        <div>
+                            <input type="checkbox" id="f-range">
+                            <label for="f-range">10$ - 100$</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="s-range">
+                            <label for="s-range">100$ - 200$</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="t-range">
+                            <label for="t-range">200$ - 300$</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="fo-range">
+                            <label for="fo-range">300$ - 400$</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <section class="results">
+                <div class="results-info">
+                    <h3>12000 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse magni quasi ab! Error, quae!</h3>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-item flex">
+                    <div class="results-item-img">
+                        <img src="./src/img/kimetsu.jpg" alt="hot-img">
+                        <div class="results-img-arrow flex">
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="results-item-description">
+                        <h3>Demon Slayer / Kimetsu no Yaiba Tomioka Giyuu Kimono Cosplay Costume</h3>
+                        <span>Medium, Male</span>
+                        <div class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="results-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa maxime delectus nesciunt distinctio saepe, quod minus nostrum rerum aperiam nulla non officiis, voluptas quisquam dicta labore? Consectetur excepturi atque illo asperiores delectus sed, ipsa facere. Quisquam nihil porro harum eligendi repudiandae dolor excepturi, fuga sed maxime animi sunt aliquid.</p>
+                        </div>
+                        <div class="results-details flex">
+                            <p>By: <a href="#" class="results-details-a">Jorge Clone</a></p>
+                            <p> Location: <a href="#" class="results-details-a">Sau Paulo</a></p>
+                        </div>
+                        <div class="buttons-results flex">
+                            <div class="buttons-left">
+                                <h4>Agust 10th, 2020</h4>
+                            </div>
+                            <div class="buttons-right">
+                                <a href="#" class="buttons-a">56.99$</a>
+                                <a href="#" class="buttons-a"><i class="fas fa-cart-arrow-down"></i> Purchase details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="info-footer flex">
+            <div class="logo-footer">
+                <div class="img-footer flex">
+                    <img src="./src/img/logo-footer.png" alt="logo-footer">
+                </div>
+                <div class="logo-footer-description">
+                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eveniet facere explicabo quae qui perspiciatis alias necessitatibus facilis exercitationem quibusdam, sapiente illo eos assumenda architecto dolores minima voluptate vitae ipsa voluptatibus. Amet ut nemo tempore assumenda similique, nobis a velit ipsum dignissimos beatae rem culpa nostrum non!</h2>
+                </div>
+            </div>
+            <div class="footer-lists flex">
+                <div class="column-list">
+                    <div class="title-list">
+                        <h2>CATEGORIES</h2>
+                    </div>
+                    <div class="one-list">
+                        <ul>
+                            <li><a href="#">Anime Costumes</a></li>
+                            <li><a href="#">Game Costumes</a></li>
+                            <li><a href="#">Movie Costumes</a></li>
+                            <li><a href="#">Wigs</a></li>
+                            <li><a href="#">Anime's Shoes</a></li>
+                            <li><a href="#">Anime's Accessories</a></li>
+                            <li><a href="#">Game's Accessories</a></li>
+                            <li><a href="#">Anime's Posters</a></li>
+                            <li><a href="#">Game's Posters</a></li>
+                            <li><a href="#">Movie's Posters</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="column-list">
+                    <div class="title-list">
+                        <h2>LOCATIONS</h2>
+                    </div>
+                    <div class="one-list">
+                        <ul>
+                            <li><a href="#">Peru</a></li>
+                            <li><a href="#">Ecuador</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">United States</a></li>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Argelia</a></li>
+                            <li><a href="#">Cuba</a></li>
+                            <li><a href="#">Russia</a></li>
+                            <li><a href="#">Japan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column-list">
+                    <div class="title-list">
+                        <h2>NAVIGATION</h2>
+                    </div>
+                    <div class="one-list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column-list last-list flex">
+                    <div class="two-list">
+                        <ul>
+                            <li><a class="a-one"href="#">COUNTRY:</a></li>
+                            <li><a class="a-one" href="#">LANGUAGE:</a></li>
+                            <li><a class="a-one" href="#">CURRENCY:</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-list last-list flex">
+                        <div class="twopoint-list">
+                            <ul>
+                                <li><a class="a-two" href="#">LONDON</a></li>
+                                <li><a class="a-two" href="#">ENGLISH</a></li>
+                                <li><a class="a-two" href="#">DOLLAR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-footer flex">
+            <div class="letters-footer">
+                <p>Cophyright© Zattix.com All Rights Reserved. Designed by Mohammed Awad - <br> Used for learning purposes only by Giordano Díaz (Full Stack dev-Jr.)</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/diazgio" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/GiorDiaz93" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/giordano_diaz" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/giordano-diaz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

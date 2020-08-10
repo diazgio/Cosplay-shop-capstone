@@ -1,31 +1,33 @@
 @import 'variables';
 
-.hero {
+.hero-search {
     background-color: $primarycolor;
-    background-image: url(../img/logo-header2.png);
+    background-image: url(../img/logo-header.png);
+    background-size: 30rem;
     background-repeat: no-repeat;
     background-position-x: 10rem;
-    padding: 10rem 0;
+    padding: 3rem 0;
     text-align: center;
 
-    .hero-title {
+    .hero-search-title {
         color: white;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         width: $desktopwidth;
+        text-align: start;
 
         h1 {
             font-family: $firstfont;
-            font-size: 7rem;
+            font-size: 5rem;
         }
         p {
             font-family: $thirdfont;
             font-size: 2.5rem;
-            font-weight: 400;
+            font-weight: bold;
         }
     }
 
-    .navbar-hero {
-        justify-content: center;
+    .navbar-hero-search {
+        justify-content: flex-start;
         align-items: center;
         width: $desktopwidth;
     }

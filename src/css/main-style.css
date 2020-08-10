@@ -4,6 +4,14 @@
 @import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
 @import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
 @import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
 .header {
   background-color: #383838;
   font-family: Helvetica, sans-serif;
@@ -28,6 +36,7 @@
 }
 .header .navbar-header a {
   text-decoration: none;
+  padding: 1rem;
 }
 .header .navbar-header ul {
   list-style: none;
@@ -35,15 +44,23 @@
 .header .navbar-header li {
   margin: auto 1rem;
 }
+.header .navbar-header a:hover {
+  background-color: #6d6b6b;
+  border-radius: 0.4rem;
+}
 .header .navbar-header .home-header {
   color: #D35266;
 }
 .header .navbar-header .navbar-items, .header .navbar-header .navbar-items:visited, .header .navbar-header .navbar-items:link {
   color: #888888;
 }
+.header .header-container-left {
+  margin-left: 0;
+}
 .header .header-container-right {
   justify-content: space-around;
   align-items: center;
+  margin-right: 0;
 }
 .header .header-container-right a, .header .header-container-right a:visited, .header .header-container-right a:link {
   padding: 0 1rem;
@@ -54,9 +71,79 @@
   font-size: 4rem;
 }
 
+.headers {
+  background-color: #383838;
+  font-family: Helvetica, sans-serif;
+}
+.headers .headers-container {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  width: 70%;
+}
+.headers .logo-headers {
+  align-items: center;
+}
+.headers .logo-headers .logo-img {
+  width: 12rem;
+  height: 6rem;
+  margin: 1rem;
+}
+.headers .navbar-headers {
+  align-items: center;
+  text-transform: uppercase;
+}
+.headers .navbar-headers a {
+  text-decoration: none;
+  padding: 1rem;
+}
+.headers .navbar-headers ul {
+  list-style: none;
+}
+.headers .navbar-headers li {
+  margin: auto 1rem;
+}
+.headers .navbar-headers .home-headers {
+  color: #D35266;
+}
+.headers .navbar-headers .navbar-items, .headers .navbar-headers .navbar-items:visited, .headers .navbar-headers .navbar-items:link {
+  color: #888888;
+}
+.headers .navbar-headers .search-headers {
+  background-color: #D35266;
+  color: white;
+  border-radius: 0.4rem;
+}
+.headers .navbar-headers .navbar-items:hover,
+.headers .navbar-headers .home-headers:hover {
+  background-color: #6d6b6b;
+  border-radius: 0.4rem;
+}
+.headers .navbar-headers .search-headers:hover {
+  background-color: #D35266;
+  color: white;
+  border-radius: 0.4rem;
+}
+.headers .headers-container-left {
+  margin-left: 0;
+}
+.headers .headers-container-right {
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 0;
+}
+.headers .headers-container-right a, .headers .headers-container-right a:visited, .headers .headers-container-right a:link {
+  padding: 0 1rem;
+  color: #888888;
+  text-decoration: none;
+}
+.headers .headers-container-right .User {
+  font-size: 4rem;
+}
+
 .hero {
   background-color: #D35266;
-  background-image: url(../img/logo-header.png);
+  background-image: url(../img/logo-header2.png);
   background-repeat: no-repeat;
   background-position-x: 10rem;
   padding: 10rem 0;
@@ -321,6 +408,11 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+.main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+}
 .main .styles-section .carrousel .slide_img .prev, .main .styles-section .carrousel .slide_img .next {
   width: 4%;
   height: 100%;
@@ -497,6 +589,220 @@
   padding: 1rem;
   font-size: 4rem;
   color: #888888;
+}
+
+.hero-search {
+  background-color: #D35266;
+  background-image: url(../img/logo-header.png);
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-position-x: 10rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+.hero-search .hero-search-title {
+  color: white;
+  margin-bottom: 3rem;
+  width: 70%;
+  text-align: start;
+}
+.hero-search .hero-search-title h1 {
+  font-family: Gotham;
+  font-size: 5rem;
+}
+.hero-search .hero-search-title p {
+  font-family: Gotham Rounded;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.hero-search .navbar-hero-search {
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+.hero-search .inputs-hero {
+  margin: 0;
+  height: fit-content;
+  align-items: center;
+}
+.hero-search .inputs-hero input {
+  padding: 1rem;
+  margin: 0;
+  outline: none;
+  width: 30rem;
+}
+.hero-search .styles-input-hero {
+  background-color: white;
+  width: 20rem;
+  height: 100%;
+  padding: 1.3rem;
+  margin: 0;
+  text-decoration: none;
+  color: #888888;
+}
+.hero-search .styles-input-hero i {
+  color: #383838;
+  padding: 0 0.5rem;
+}
+.hero-search .search-button-hero {
+  margin: 0 0 0 2rem;
+  background-color: #383838;
+  width: 10rem;
+  height: 100%;
+  padding: 1.3rem;
+  text-decoration: none;
+  color: #888888;
+}
+
+.main-search {
+  background-color: #f6f6f6;
+}
+.main-search .main-search-container {
+  width: 70%;
+  border: 1px solid #888888;
+}
+.main-search .main-search-container .filters {
+  margin: 0;
+  width: 20%;
+}
+.main-search .main-search-container .filters .filters-control h3 {
+  padding: 1.9rem 1rem 1rem 1rem;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #888888;
+}
+.main-search .main-search-container .filters .filters-control h4 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #383838;
+  border-bottom: 1px solid #888888;
+  margin: 0 1rem;
+}
+.main-search .main-search-container .filters .filters-control .gender,
+.main-search .main-search-container .filters .filters-control .size,
+.main-search .main-search-container .filters .filters-control .price {
+  padding: 1.5rem;
+}
+.main-search .main-search-container .filters .filters-control .gender input,
+.main-search .main-search-container .filters .filters-control .size input,
+.main-search .main-search-container .filters .filters-control .price input {
+  margin: 1rem 1rem;
+}
+.main-search .main-search-container .filters .filters-control .gender label,
+.main-search .main-search-container .filters .filters-control .size label,
+.main-search .main-search-container .filters .filters-control .price label {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.main-search .main-search-container .results {
+  margin: 0;
+  width: 80%;
+  border-left: 1px solid #888888;
+}
+.main-search .main-search-container .results .results-info {
+  border-bottom: 1px solid #888888;
+  padding: 1.5rem 1rem;
+  font-family: Gotham Rounded;
+  color: #888888;
+  font-size: 1.3rem;
+}
+.main-search .main-search-container .results .results-item .results-item-img {
+  position: relative;
+  top: 0;
+  padding: 1rem;
+}
+.main-search .main-search-container .results .results-item .results-item-img img {
+  width: 30rem;
+  height: 30rem;
+}
+.main-search .main-search-container .results .results-item .results-item-img .results-img-arrow {
+  position: absolute;
+  padding: 1rem 1.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #383838;
+}
+.main-search .main-search-container .results .results-item .results-item-img .results-img-arrow a {
+  color: #D35266;
+  font-size: 2rem;
+}
+.main-search .main-search-container .results .results-item .results-item-img .results-img-arrow a i {
+  padding: 0 1rem;
+}
+.main-search .main-search-container .results .results-item .results-item-img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+}
+.main-search .main-search-container .results .results-item .results-item-description {
+  padding: 1rem;
+  position: relative;
+}
+.main-search .main-search-container .results .results-item .results-item-description h3 {
+  font-size: 1.7rem;
+  font-family: Gotham;
+  margin-bottom: 1rem;
+}
+.main-search .main-search-container .results .results-item .results-item-description span {
+  color: #D35266;
+  font-size: 1.5rem;
+  font-family: Gotham;
+}
+.main-search .main-search-container .results .results-item .results-item-description .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-search .main-search-container .results .results-item .results-item-description .plus i {
+  color: #888888;
+  padding: 1rem;
+  border: 1px solid #888888;
+  margin: 1rem;
+}
+.main-search .main-search-container .results .results-item .results-item-description .plus:hover i {
+  background-color: #383838;
+  color: #D35266;
+  cursor: pointer;
+}
+.main-search .main-search-container .results .results-item .results-item-description .results-text {
+  margin: 1rem 0;
+  color: #888888;
+  font-size: 1.5rem;
+  font-family: Gotham Rounded;
+}
+.main-search .main-search-container .results .results-item .results-item-description .results-details {
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+.main-search .main-search-container .results .results-item .results-item-description .results-details p {
+  margin: 0 1em 0 0;
+  color: #383838;
+}
+.main-search .main-search-container .results .results-item .results-item-description .results-details p .results-details-a {
+  text-decoration: none;
+  color: #888888;
+}
+.main-search .main-search-container .results .results-item .results-item-description .buttons-results {
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+}
+.main-search .main-search-container .results .results-item .results-item-description .buttons-results .buttons-right,
+.main-search .main-search-container .results .results-item .results-item-description .buttons-results .buttons-left {
+  margin: 0;
+}
+.main-search .main-search-container .results .results-item .results-item-description .buttons-results .buttons-left {
+  color: #888888;
+}
+.main-search .main-search-container .results .results-item .results-item-description .buttons-results .buttons-right .buttons-a {
+  text-decoration: none;
+  color: white;
+  font-family: Gotham;
+  background-color: #D35266;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
 }
 
 *,

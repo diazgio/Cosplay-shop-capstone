@@ -1,17 +1,17 @@
 @import 'variables';
 
-.header {
+.headers {
     background-color: $thirdcolor;
     font-family: $Secondfont;
     
-    .header-container {
+    .headers-container {
         align-items: center;
         justify-content: space-between;
         font-size: 2.2rem;
         width: $desktopwidth;
     }
 
-    .logo-header {
+    .logo-headers {
         align-items: center;
         
         .logo-img {
@@ -22,7 +22,7 @@
     }
 
 
-    .navbar-header {
+    .navbar-headers {
         align-items: center;
         text-transform: uppercase;
 
@@ -39,25 +39,39 @@
             margin: auto 1rem;
         }
 
-        a:hover {
+        
+        .home-headers {
+            color: $primarycolor;
+        }
+        
+        .navbar-items, .navbar-items:visited, .navbar-items:link {
+            color: $secondarycolor;
+        }
+        
+        .search-headers {
+            background-color: $primarycolor;
+            color: white;
+            border-radius: .4rem;
+        }
+
+        .navbar-items:hover,
+        .home-headers:hover {
             background-color: $thirdcolohover;
             border-radius: .4rem;
         }
 
-        .home-header {
-            color: $primarycolor;
-        }
-
-        .navbar-items, .navbar-items:visited, .navbar-items:link {
-            color: $secondarycolor;
+        .search-headers:hover {
+            background-color: $primarycolor;
+            color: white;
+            border-radius: .4rem;
         }
     }
 
-    .header-container-left {
+    .headers-container-left {
         margin-left: 0;
     }
 
-    .header-container-right {
+    .headers-container-right {
         justify-content: space-around;
         align-items: center;
         margin-right: 0;
