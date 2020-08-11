@@ -18,7 +18,63 @@
     }
   }
 
+  .title-section {
+    align-items: center;
+    justify-content: start;
+    margin: 0 4rem;
+    border-bottom: 1px solid $nav_color;
+
+    h2 {
+      margin: 0;
+      padding: 1rem 1rem 1rem 0;
+      font-size: 1.7rem;
+
+      i {
+        padding-right: 1rem;
+      }
+    }
+
+    p {
+      margin: 0 0.5rem;
+      color: $secondarycolor;
+      padding: 1rem 0;
+    }
+  }
+
+  .View-title {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: $primarycolor;
+      font-family: $firstfont;
+    }
+
+    a:visited,
+    a:link {
+      color: $primarycolor;
+    }
+  }
+
   .hot-ads {
+    width: $desktopwidth;
+    padding-bottom: 3rem;
+
+    .hot-container {
+      align-items: center;
+    }
+
+    .hot-ads-title {
+      width: 70%;
+      padding: 2rem 0;
+
+      h2 {
+        color: $secondarycolor;
+      }
+    }
+
     .hot-arrow {
       width: 5.5rem;
       height: 5rem;
@@ -144,7 +200,7 @@
         }
 
         .description-a:visited,
-        .description-a:link, {
+        .description-a:link {
           text-decoration: none;
           color: $secondarycolor;
         }
@@ -313,67 +369,6 @@
     }
   }
 
-  .hot-ads {
-    width: $desktopwidth;
-    padding-bottom: 3rem;
-
-    .hot-container {
-      align-items: center;
-    }
-
-    .hot-ads-title {
-      width: 70%;
-      padding: 2rem 0;
-
-      h2 {
-        color: $secondarycolor;
-      }
-    }
-  }
-
-  .styles-section {
-
-    .title-section {
-      align-items: center;
-      justify-content: start;
-      margin: 0 4rem;
-      border-bottom: 1px solid $nav_color;
-
-      h2 {
-        margin: 0;
-        padding: 1rem 1rem 1rem 0;
-        font-size: 1.7rem;
-
-        i {
-          padding-right: 1rem;
-        }
-      }
-
-      p {
-        margin: 0 0.5rem;
-        color: $secondarycolor;
-        padding: 1rem 0;
-      }
-    }
-
-    .View-title {
-      justify-content: flex-end;
-      align-items: center;
-      margin: 0;
-
-      a {
-        text-decoration: none;
-        color: $primarycolor;
-        font-family: $firstfont;
-      }
-
-      a:visited,
-      a:link {
-        color: $primarycolor;
-      }
-    }
-  }
-
   .first {
     border-top: 1px solid $thirdcolor;
 
@@ -381,10 +376,6 @@
       border-bottom: 1px solid $nav_color;
       margin: 0 4rem;
       justify-content: space-between;
-    }
-
-    .title-section {
-      border: 0;
     }
   }
 }

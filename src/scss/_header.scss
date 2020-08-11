@@ -25,6 +25,22 @@
     margin-left: 0;
   }
 
+  .header-container-right {
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+
+    a {
+      padding: 0 1rem;
+      color: $secondarycolor;
+      text-decoration: none;
+    }
+
+    .User {
+      font-size: 4rem;
+    }
+  }
+
   .navbar-header {
     align-items: center;
     text-transform: uppercase;
@@ -51,27 +67,7 @@
     .navbar-items:link {
       color: $secondarycolor;
     }
-  }
 
-  .header-container-right {
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 0;
-
-    a,
-    a:visited,
-    a:link {
-      padding: 0 1rem;
-      color: $secondarycolor;
-      text-decoration: none;
-    }
-
-    .User {
-      font-size: 4rem;
-    }
-  }
-
-  .navbar-header {
     a:hover {
       background-color: $thirdcolohover;
       border-radius: 0.4rem;
