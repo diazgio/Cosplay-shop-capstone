@@ -58,7 +58,6 @@
 
       .results-item {
         margin-bottom: 5rem;
-
         .results-item-description {
           padding: 1rem;
           position: relative;
@@ -176,13 +175,14 @@
               }
             }
           }
-        } 
-               
+        }
+
         .results-item-img:hover {
           -webkit-transform: scale(1.2);
           transform: scale(1.2);
           z-index: 10;
         }
+        
       }
     }
   }

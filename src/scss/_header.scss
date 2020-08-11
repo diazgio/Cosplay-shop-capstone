@@ -42,11 +42,6 @@
       margin: auto 1rem;
     }
 
-    a:hover {
-      background-color: $thirdcolohover;
-      border-radius: 0.4rem;
-    }
-
     .home-header {
       color: $primarycolor;
     }
@@ -73,6 +68,13 @@
 
     .User {
       font-size: 4rem;
+    }
+  }
+
+  .navbar-header {
+    a:hover {
+      background-color: $thirdcolohover;
+      border-radius: 0.4rem;
     }
   }
 }
