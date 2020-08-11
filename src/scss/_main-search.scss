@@ -59,35 +59,27 @@
       .results-item {
         margin-bottom: 5rem;
 
-        .results-item-description {
-          padding: 1rem;
+        .plus {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          i {
+            color: $secondarycolor;
+            padding: 1rem;
+            border: 1px solid $secondarycolor;
+            margin: 1rem;
+          }
+        }
+
+        .results-item-img {
           position: relative;
+          top: 0;
+          padding: 1rem;
 
-          h3 {
-            font-size: 1.7rem;
-            font-family: $firstfont;
-            margin-bottom: 1rem;
-            margin-left: 0;
-            width: 90%;
-          }
-
-          span {
-            color: $primarycolor;
-            font-size: 1.5rem;
-            font-family: $firstfont;
-          }
-
-          .plus {
-            position: absolute;
-            top: 0;
-            right: 0;
-
-            i {
-              color: $secondarycolor;
-              padding: 1rem;
-              border: 1px solid $secondarycolor;
-              margin: 1rem;
-            }
+          img {
+            width: 30rem;
+            height: 30rem;
           }
 
           .results-img-arrow {
@@ -105,6 +97,25 @@
                 padding: 0 1rem;
               }
             }
+          }
+        }
+
+        .results-item-description {
+          padding: 1rem;
+          position: relative;
+
+          h3 {
+            font-size: 1.7rem;
+            font-family: $firstfont;
+            margin-bottom: 1rem;
+            margin-left: 0;
+            width: 90%;
+          }
+
+          span {
+            color: $primarycolor;
+            font-size: 1.5rem;
+            font-family: $firstfont;
           }
 
           .plus:hover {
@@ -164,17 +175,6 @@
                 border-radius: 0.4rem;
               }
             }
-          }
-        }
-
-        .results-item-img {
-          position: relative;
-          top: 0;
-          padding: 1rem;
-
-          img {
-            width: 30rem;
-            height: 30rem;
           }
         }
 

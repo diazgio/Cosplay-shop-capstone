@@ -504,8 +504,9 @@
           .carrousel-container {
             .item-carrousel {
               width: 35%;
+
               img {
-                height: 15rem
+                height: 15rem;
               }
             }
 
@@ -521,15 +522,14 @@
               display: none;
             }
           }
+
           .prev span,
           .next span {
-            border: solid .8rem;
+            border: solid 0.8rem;
             border-color: transparent transparent transparent #383838;
           }
         }
       }
-
-      
     }
   }
 }
@@ -606,9 +606,10 @@
               display: none;
             }
           }
+
           .prev span,
           .next span {
-            border: solid .8rem;
+            border: solid 0.8rem;
             border-color: transparent transparent transparent #383838;
           }
         }
