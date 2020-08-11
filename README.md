@@ -1,59 +1,38 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# 🧐 Cosplay-Shop Capstone-project
 
-# Project Name
+> This is the last HTML and CSS project from Microverse program, It's a mock-up of a ZATTIX web designed by Mohammed Awad on Behance, it's built on HTML and CSS3 languages using Sass.
 
-> One paragraph statement about the project.
+![screenshot](./src/img/screen-shot.png)
 
-![screenshot](./app_screenshot.png)
+## 🔧 Built With
 
-Additional description about the project and its features.
+- HTML and CSS3.
+- Using UX.
+- Using floats and flexbox.
+- Using Sass preprocesor.
+- Using StyleLinters.
+- W3 HTML Validation Service.
 
-## Built With
-
-- Major languages,
-- frameworks,
-- technologies used
-
-## Live Demo
+## 🔴 Live Demo
 
 [Live Demo Link](https://diazgio.github.io/Cosplay-shop-capstone/.)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+## 🛠 Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Go to the main page of te repo.
+- Press the "Code" button and get the repo link.
+- Clone it using git.
 
 ## Authors
 
-👤 **Author1**
+👤 **Giordano Díaz**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@diazgio](https://github.com/diazgio)
+- Twitter: [@giordano_diaz](https://twitter.com/giordano_diaz)
+- LinkenIn:[LinkenIn](www.linkedin.com/in/Giordano-Diaz)
 
 ## 🤝 Contributing
 
@@ -64,12 +43,6 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
