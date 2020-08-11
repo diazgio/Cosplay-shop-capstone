@@ -1,149 +1,63 @@
 @import 'variables';
 
 .footer {
-  background-color: white;
+    background-color: white;
 
-  .copy-right-footer {
-    width: $desktopwidth;
-    border-top: 1px solid $secondarycolor;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0;
+    .copy-right-footer {
+      width: $desktopwidth;
+      border-top: 1px solid $secondarycolor;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 0;
 
-    .letters-footer {
-      margin: 0 0 0 5rem;
-      font-size: 1.7rem;
-      color: $secondarycolor;
-    }
-
-    .social-links {
-      margin: 0 5rem 0 0;
-
-      a {
-        padding: 1rem;
-        font-size: 4rem;
+      .letters-footer {
+        margin: 0 0 0 5rem;
+        font-size: 1.7rem;
         color: $secondarycolor;
       }
-    }
-  }
 
-  .info-footer {
-    width: $desktopwidth;
-    border-top: 1px solid $secondarycolor;
-    border-bottom: 2px solid $secondarycolor;
-
-    .logo-footer {
-      width: 40%;
-      margin: 0;
-      margin-left: 5rem;
-      padding: 2rem 0;
-
-      .img-footer {
-        img {
-          width: 50rem;
-          height: 20rem;
+      .social-links {
+        margin: 0 5rem 0 0;
+        a {
+          padding: 1rem;
+          font-size: 4rem;
+          color: $secondarycolor;
         }
-      }
-
-      .logo-footer-description {
-        padding: 1.5rem;
-        color: $secondarycolor;
       }
     }
 
-    .footer-lists {
-      width: 60%;
-      margin: 0;
-      padding: 2rem 0;
-      margin-right: 5rem;
+    .info-footer {
+      width: $desktopwidth;
+      border-top: 1px solid $secondarycolor;
+      border-bottom: 2px solid $secondarycolor;
 
-      .column-list {
-        margin: 0 2rem;
+      .logo-footer {
+        width: 40%;
+        margin: 0;
+        margin-left: 5rem;
+        padding: 2rem 0;
 
-        .title-list {
-          color: $primarycolor;
-          border-bottom: 2px solid $primarycolor;
+        .img-footer {
+          img {
+            width: 50rem;
+            height: 20rem;
+          }
         }
 
-        .one-list {
-          ul {
-            list-style: none;
-
-            li {
-              padding: 1rem 0;
-
-              a {
-                text-decoration: none;
-                color: $secondarycolor;
-                font-size: 1.5rem;
-                font-weight: bold;
-              }
-
-              a:hover {
-                text-decoration: underline;
-                color: $primarycolor;
-                text-decoration-color: $primarycolor;
-                font-size: 2.2rem;
-              }
-            }
-          }
+        .logo-footer-description {
+          padding: 1.5rem;
+          color: $secondarycolor;
         }
       }
 
-      .last-list {
-        align-items: center;
-        width: 25%;
+      .footer-lists {
+        width: 60%;
+        margin: 0;
+        padding: 2rem 0;
+        margin-right: 5rem;
 
-        .two-list {
-          ul {
-            list-style: none;
-
-            li {
-              padding: 2rem 0;
-
-              .a-one {
-                text-decoration: none;
-                color: $primarycolor;
-                font-size: 1.5rem;
-                font-weight: bold;
-                width: 50%;
-              }
-            }
-          }
-        }
-
-        .twopoint-list {
-          ul {
-            list-style: none;
-
-            li {
-              padding: 2rem 0;
-
-              .a-two {
-                text-decoration: none;
-                color: $secondarycolor;
-                padding: 1.3rem 1.5rem;
-                border: 1px solid grey;
-                border-radius: 0.4rem;
-                margin-left: 1rem;
-                width: 50%;
-              }
-
-              .a-two:hover {
-                font-size: 2.2rem;
-                background-color: $thirdcolor;
-                text-decoration: underline;
-                color: $primarycolor;
-              }
-            }
-          }
-        }
-      }
-
-      .footer-lists1 {
         .column-list {
           margin: 0 2rem;
-          width: 25%;
 
           .title-list {
             color: $primarycolor;
@@ -174,15 +88,98 @@
             }
           }
         }
+
+        .last-list {
+          align-items: center;
+          width: 25%;
+
+          .two-list {
+            ul {
+              list-style: none;
+
+              li {
+                padding: 2rem 0;
+
+                .a-one {
+                  text-decoration: none;
+                  color: $primarycolor;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                  width: 50%;
+                }
+              }
+            }
+          }
+
+          .twopoint-list {
+            ul {
+              list-style: none;
+
+              li {
+                padding: 2rem 0;
+
+                .a-two {
+                  text-decoration: none;
+                  color: $secondarycolor;
+                  padding: 1.3rem 1.5rem;
+                  border: 1px solid grey;
+                  border-radius: 0.4rem;
+                  margin-left: 1rem;
+                  width: 50%;
+                }
+
+                .a-two:hover {
+                  font-size: 2.2rem;
+                  background-color: $thirdcolor;
+                  text-decoration: underline;
+                  color: $primarycolor;
+                }
+              }
+            }
+          }
+        }
+
+        .footer-lists1 {
+          .column-list {
+            margin: 0 2rem;
+            width: 25%;
+
+            .title-list {
+              color: $primarycolor;
+              border-bottom: 2px solid $primarycolor;
+            }
+
+            .one-list {
+              ul {
+                list-style: none;
+
+                li {
+                  padding: 1rem 0;
+
+                  a {
+                    text-decoration: none;
+                    color: $secondarycolor;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                  }
+
+                  a:hover {
+                    text-decoration: underline;
+                    color: $primarycolor;
+                    text-decoration-color: $primarycolor;
+                    font-size: 2.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer-lists-tow {
+        display: none;
       }
     }
-
-    .footer-lists-tow {
-      display: none;
-    }
-  }
-
-  
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -207,6 +204,20 @@
 
 @media screen and (min-width: 300px) and (max-width: 1024px) {
   .footer {
+    .copy-right-footer {
+      width: $movilwidth;
+
+      .letters-footer {
+        font-size: 1.5rem;
+      }
+
+      .social-links {
+        a {
+          font-size: 3rem;
+        }
+      }
+    }
+
     .info-footer {
       width: $movilwidth;
 
@@ -262,20 +273,6 @@
               }
             }
           }
-        }
-      }
-    }
-
-    .copy-right-footer {
-      width: $movilwidth;
-
-      .letters-footer {
-        font-size: 1.5rem;
-      }
-
-      .social-links {
-        a {
-          font-size: 3rem;
         }
       }
     }
