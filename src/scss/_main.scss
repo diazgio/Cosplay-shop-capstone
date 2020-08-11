@@ -42,10 +42,11 @@
             border-bottom: 0.1rem solid $secondarycolor;
             border-right: 0.1rem solid $secondarycolor;
             box-shadow: 1rem 0.5rem rgba($color: #888080, $alpha: 0.1);
+            padding: 1.5rem 0;
 
             .hot-img {
                 height: 30rem;
-                width: 60rem;
+                width: 30%;
                 position: relative;
                 img {
                     width: 100%;
@@ -69,6 +70,7 @@
 
             .hot-description {
                 padding: 1rem 3rem;
+                width: 70%;
                 h3 {
                     color: $primarycolor;
                     font-size: 2rem;

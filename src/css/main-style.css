@@ -71,6 +71,61 @@
   font-size: 4rem;
 }
 
+@media screen and (min-width: 1089px) and (max-width: 1440px) {
+  .header .header-container {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1088px) {
+  .header .header-container {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 483px) and (max-width: 767px) {
+  .header .header-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .header .header-container .header-container-left .navbar-header ul {
+    flex-wrap: wrap;
+  }
+  .header .header-container .header-container-left .navbar-header ul li {
+    padding-bottom: 1.5rem;
+  }
+  .header .header-container .header-container-right {
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+  }
+  .header .header-container .header-container-right .User {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 483px) {
+  .header .header-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .header .header-container .header-container-left .navbar-header ul {
+    flex-wrap: wrap;
+  }
+  .header .header-container .header-container-left .navbar-header ul li {
+    padding: 1.5rem;
+    margin: auto;
+  }
+  .header .header-container .header-container-right {
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+  }
+  .header .header-container .header-container-right .User {
+    font-size: 2rem;
+  }
+}
 .headers {
   background-color: #383838;
   font-family: Helvetica, sans-serif;
@@ -226,27 +281,27 @@
   align-items: center;
   width: 70%;
 }
-.hero .inputs-hero {
+.hero .navbar-hero .inputs-hero {
   margin: 0;
   height: fit-content;
   align-items: center;
 }
-.hero .inputs-hero input {
+.hero .navbar-hero .inputs-hero input {
   padding: 1rem;
   margin: 0;
   outline: none;
-  width: 30rem;
+  width: 33%;
 }
-.hero .styles-input-hero {
+.hero .navbar-hero .inputs-hero .styles-input-hero {
   background-color: white;
-  width: 20rem;
+  width: 33%;
   height: 100%;
   padding: 1.3rem;
   margin: 0;
   text-decoration: none;
   color: #888888;
 }
-.hero .styles-input-hero i {
+.hero .navbar-hero .inputs-hero .styles-input-hero i {
   color: #383838;
   padding: 0 0.5rem;
 }
@@ -260,6 +315,74 @@
   color: #888888;
 }
 
+@media screen and (min-width: 928px) and (max-width: 1440px) {
+  .hero {
+    background-size: 15rem;
+    background-position-x: 0.8rem;
+    background-position-y: 15%;
+  }
+  .hero .hero-title {
+    width: 80%;
+  }
+  .hero .navbar-hero {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 927px) {
+  .hero {
+    background-size: 15%;
+    background-position-x: center;
+  }
+  .hero .hero-title {
+    width: 100%;
+    text-align: start;
+  }
+  .hero .hero-title h1 {
+    font-size: 5rem;
+  }
+  .hero .hero-title p {
+    font-size: 1.5rem;
+  }
+  .hero .navbar-hero {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 509px) {
+  .hero {
+    background-size: 15%;
+    background-position-x: center;
+  }
+  .hero .hero-title {
+    width: 100%;
+    text-align: start;
+  }
+  .hero .hero-title h1 {
+    font-size: 5rem;
+  }
+  .hero .hero-title p {
+    font-size: 1.5rem;
+  }
+  .hero .navbar-hero {
+    flex-direction: column;
+  }
+  .hero .navbar-hero .inputs-hero {
+    flex-direction: column;
+  }
+  .hero .navbar-hero .inputs-hero input {
+    margin: 1rem;
+  }
+  .hero .navbar-hero .inputs-hero .styles-input-hero {
+    width: 80%;
+  }
+  .hero .navbar-hero .inputs-hero input {
+    width: 80%;
+  }
+  .hero .navbar-hero .search-button-hero {
+    margin: 1rem;
+    width: 48%;
+  }
+}
 .main {
   background-color: #fcfcfc;
 }
@@ -299,10 +422,11 @@
   border-bottom: 0.1rem solid #888888;
   border-right: 0.1rem solid #888888;
   box-shadow: 1rem 0.5rem rgba(136, 128, 128, 0.1);
+  padding: 1.5rem 0;
 }
 .main .hot-ads .hot-ads-info .hot-img {
   height: 30rem;
-  width: 60rem;
+  width: 30%;
   position: relative;
 }
 .main .hot-ads .hot-ads-info .hot-img img {
@@ -323,6 +447,7 @@
 }
 .main .hot-ads .hot-ads-info .hot-description {
   padding: 1rem 3rem;
+  width: 70%;
 }
 .main .hot-ads .hot-ads-info .hot-description h3 {
   color: #D35266;
