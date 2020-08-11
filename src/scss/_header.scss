@@ -25,24 +25,6 @@
     margin-left: 0;
   }
 
-  .header-container-right {
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 0;
-
-    a,
-    a:visited,
-    a:link {
-      padding: 0 1rem;
-      color: $secondarycolor;
-      text-decoration: none;
-    }
-
-    .User {
-      font-size: 4rem;
-    }
-  }
-
   .navbar-header {
     align-items: center;
     text-transform: uppercase;
@@ -76,6 +58,23 @@
     }
   }
 
+  .header-container-right {
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+
+    a,
+    a:visited,
+    a:link {
+      padding: 0 1rem;
+      color: $secondarycolor;
+      text-decoration: none;
+    }
+
+    .User {
+      font-size: 4rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1089px) and (max-width: 1440px) {
