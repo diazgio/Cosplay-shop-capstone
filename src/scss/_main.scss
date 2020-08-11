@@ -3,157 +3,16 @@
 .main {
   background-color: $fourthcolor;
 
-  .hot-ads {
-    width: $desktopwidth;
-    padding-bottom: 3rem;
+  .last {
+    border-bottom: 1px solid $thirdcolor;
+    padding-bottom: 5rem;
+    height: 50rem;
 
-    .hot-container {
-      align-items: center;
-    }
-
-    .hot-ads-title {
-      width: 70%;
-      padding: 2rem 0;
-
-      h2 {
-        color: $secondarycolor;
-      }
-    }
-
-    .hot-arrow {
-      width: 5.5rem;
-      height: 5rem;
-      background-color: transparent;
-      border: 1px solid $secondarycolor;
-      border-radius: 50%;
-      position: relative;
-
-      i {
-        color: $primarycolor;
-        font-size: 3.5rem;
-        position: absolute;
-        top: 0.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-
-    .hot-ads-info {
-      width: 70%;
-      margin: 0;
-      border-bottom: 0.1rem solid $secondarycolor;
-      border-right: 0.1rem solid $secondarycolor;
-      box-shadow: 1rem 0.5rem rgba($color: #888080, $alpha: 0.1);
-      padding: 1.5rem 0;
-
-      .hot-img {
-        height: 30rem;
-        width: 30%;
-        position: relative;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-
-        .img-arrow {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          background-color: $thirdcolor;
-          padding: 1rem 1.6rem;
-
-          i {
-            color: $primarycolor;
-            padding: 0 0.8rem;
-            font-size: 2.5rem;
-          }
-        }
-      }
-
-      .hot-description {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 3rem 1rem 1rem;
-        width: 70%;
-
-        h3 {
-          color: $primarycolor;
-          font-size: 2rem;
-        }
-
-        .desktop-p {
-          width: 100%;
-          height: 10rem;
-          text-align: start;
-          margin: 0;
-          font-size: 1.7rem;
-          padding: 1rem 0;
-          font-weight: bold;
-          color: $secondarycolor;
-        }
-
-        .movil-p1 {
-          display: none;
-          text-decoration: none;
-          color: $thirdcolor;
-          font-weight: bold;
-          font-size: 1.2rem;
-        }
-
-        .description-a {
-          text-decoration: none;
-          color: $secondarycolor;
-          font-weight: normal;
-          margin-bottom: 1rem;
-        }
-
-        .data-des {
-          margin: 0 auto 0 0;
-        }
-
-        .buttons-description {
-          margin: 0 0 0 auto;
-          padding: 1rem;
-
-          .buttons-a {
-            background-color: $primarycolor;
-            text-decoration: none;
-            color: white;
-            margin-top: 2rem;
-            padding: 1rem 3rem;
-            border-radius: 0.4rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-          }
-
-          .plus {
-            display: none;
-
-            a {
-              text-decoration: none;
-
-              i {
-                color: $primarycolor;
-                padding: 1rem;
-                border: 1px solid $secondarycolor;
-                margin: 1rem;
-                background-color: $thirdcolor;
-              }
-            }
-          }
-        }
-
-        .description-a:visited,
-        .description-a:link, {
-          text-decoration: none;
-          color: $secondarycolor;
-        }
-
-        .buttons-a:visited,
-        .buttons-a:link {
-          text-decoration: none;
-          color: white;
+    .carrousel {
+      .slide_img {
+        .prev,
+        .next {
+          height: 93.5%;
         }
       }
     }
@@ -354,6 +213,162 @@
     }
   }
 
+  .hot-ads {
+    width: $desktopwidth;
+    padding-bottom: 3rem;
+
+    .hot-container {
+      align-items: center;
+    }
+
+    .hot-ads-title {
+      width: 70%;
+      padding: 2rem 0;
+
+      h2 {
+        color: $secondarycolor;
+      }
+    }
+
+    .hot-arrow {
+      width: 5.5rem;
+      height: 5rem;
+      background-color: transparent;
+      border: 1px solid $secondarycolor;
+      border-radius: 50%;
+      position: relative;
+
+      i {
+        color: $primarycolor;
+        font-size: 3.5rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .hot-ads-info {
+      width: 70%;
+      margin: 0;
+      border-bottom: 0.1rem solid $secondarycolor;
+      border-right: 0.1rem solid $secondarycolor;
+      box-shadow: 1rem 0.5rem rgba($color: #888080, $alpha: 0.1);
+      padding: 1.5rem 0;
+
+      .hot-img {
+        height: 30rem;
+        width: 30%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .img-arrow {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: $thirdcolor;
+          padding: 1rem 1.6rem;
+
+          i {
+            color: $primarycolor;
+            padding: 0 0.8rem;
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .hot-description {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 3rem 1rem 1rem;
+        width: 70%;
+
+        h3 {
+          color: $primarycolor;
+          font-size: 2rem;
+        }
+
+        .desktop-p {
+          width: 100%;
+          height: 10rem;
+          text-align: start;
+          margin: 0;
+          font-size: 1.7rem;
+          padding: 1rem 0;
+          font-weight: bold;
+          color: $secondarycolor;
+        }
+
+        .movil-p1 {
+          display: none;
+          text-decoration: none;
+          color: $thirdcolor;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        .description-a {
+          text-decoration: none;
+          color: $secondarycolor;
+          font-weight: normal;
+          margin-bottom: 1rem;
+        }
+
+        .data-des {
+          margin: 0 auto 0 0;
+        }
+
+        .buttons-description {
+          margin: 0 0 0 auto;
+          padding: 1rem;
+
+          .buttons-a {
+            background-color: $primarycolor;
+            text-decoration: none;
+            color: white;
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            border-radius: 0.4rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          .plus {
+            display: none;
+
+            a {
+              text-decoration: none;
+
+              i {
+                color: $primarycolor;
+                padding: 1rem;
+                border: 1px solid $secondarycolor;
+                margin: 1rem;
+                background-color: $thirdcolor;
+              }
+            }
+          }
+        }
+
+        .description-a:visited,
+        .description-a:link, {
+          text-decoration: none;
+          color: $secondarycolor;
+        }
+
+        .buttons-a:visited,
+        .buttons-a:link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  
   .first {
     border-top: 1px solid $thirdcolor;
 
@@ -365,21 +380,6 @@
 
     .title-section {
       border: 0;
-    }
-  }
-
-  .last {
-    border-bottom: 1px solid $thirdcolor;
-    padding-bottom: 5rem;
-    height: 50rem;
-
-    .carrousel {
-      .slide_img {
-        .prev,
-        .next {
-          height: 93.5%;
-        }
-      }
     }
   }
 }
