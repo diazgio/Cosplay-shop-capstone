@@ -1,169 +1,178 @@
 @import 'variables';
 
 .headers {
-    background-color: $thirdcolor;
-    font-family: $Secondfont;
-    
-    .headers-container {
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.7rem;
-        width: $desktopwidth;
+  background-color: $thirdcolor;
+  font-family: $Secondfont;
+
+  .headers-container {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    width: $desktopwidth;
+  }
+
+  .logo-headers {
+    align-items: center;
+
+    .logo-img {
+      width: 12rem;
+      height: 6rem;
+      margin: 1rem;
+    }
+  }
+
+  .navbar-headers {
+    align-items: center;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      padding: 1rem;
     }
 
-    .logo-headers {
-        align-items: center;
-        
-        .logo-img {
-            width: 12rem;
-            height: 6rem;
-            margin: 1rem;
-        }
+    ul {
+      list-style: none;
     }
 
+    li {
+      margin: auto 1rem;
 
-    .navbar-headers {
-        align-items: center;
-        text-transform: uppercase;
-
-        a {
-            text-decoration: none;
-            padding: 1rem;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        li {
-            margin: auto 1rem;
-            i {
-                margin-right: 1rem;
-            }
-        }
-
-        
-        .home-headers {
-            color: $primarycolor;
-        }
-        
-        .navbar-items, .navbar-items:visited, .navbar-items:link {
-            color: $secondarycolor;
-        }
-        
-        .search-headers {
-            background-color: $primarycolor;
-            color: white;
-            border-radius: .4rem;
-        }
-
-        .navbar-items:hover,
-        .home-headers:hover {
-            background-color: $thirdcolohover;
-            border-radius: .4rem;
-        }
-
-        .search-headers:hover {
-            background-color: $primarycolor;
-            color: white;
-            border-radius: .4rem;
-        }
+      i {
+        margin-right: 1rem;
+      }
     }
 
-    .headers-container-left {
-        margin-left: 0;
+    .home-headers {
+      color: $primarycolor;
     }
 
-    .headers-container-right {
-        justify-content: space-around;
-        align-items: center;
-        margin-right: 0;
-        
-        a, a:visited, a:link {
-            padding: 0 1rem;
-            color: $secondarycolor;
-            text-decoration: none;
-        }
-
-        .User {
-            font-size: 4rem;
-        }
+    .navbar-items,
+    .navbar-items:visited,
+    .navbar-items:link {
+      color: $secondarycolor;
     }
 
+    .search-headers {
+      background-color: $primarycolor;
+      color: white;
+      border-radius: 0.4rem;
+    }
+
+    .navbar-items:hover,
+    .home-headers:hover {
+      background-color: $thirdcolohover;
+      border-radius: 0.4rem;
+    }
+
+    .search-headers:hover {
+      background-color: $primarycolor;
+      color: white;
+      border-radius: 0.4rem;
+    }
+  }
+
+  .headers-container-left {
+    margin-left: 0;
+  }
+
+  .headers-container-right {
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+
+    a,
+    a:visited,
+    a:link {
+      padding: 0 1rem;
+      color: $secondarycolor;
+      text-decoration: none;
+    }
+
+    .User {
+      font-size: 4rem;
+    }
+  }
 }
-
 
 @media screen and (min-width: 1089px) and (max-width: 1440px) {
-    .headers {
-        .headers-container {
-            font-size: 1.3rem;
-            width: 80%;
-        }
+  .headers {
+    .headers-container {
+      font-size: 1.3rem;
+      width: 80%;
     }
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1088px){
-    .headers {
-        .headers-container {
-            font-size: 1rem;
-            width: 90%;
-        }
+@media screen and (min-width: 768px) and (max-width: 1088px) {
+  .headers {
+    .headers-container {
+      font-size: 1rem;
+      width: 90%;
     }
+  }
 }
 
 @media screen and (min-width: 483px) and (max-width: 767px) {
-    .headers {
-        .headers-container {
+  .headers {
+    .headers-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 0.8rem;
+      width: $movilwidth;
+
+      .headers-container-left {
+        .navbar-headers {
+          ul {
             flex-wrap: wrap;
-            justify-content: flex-start;
-            font-size: 0.8rem;
-            width: $movilwidth;
-            .headers-container-left {
-                .navbar-headers {
-                    ul {
-                        flex-wrap: wrap;
-                        li {
-                            padding-bottom: 1.5rem;
-                        }
-                    }
-                }
+
+            li {
+              padding-bottom: 1.5rem;
             }
-            .headers-container-right {
-                margin-left: 15rem;
-                margin-bottom: 2rem;
-                .User {
-                    font-size: 2rem;
-                }
-            }
+          }
         }
+      }
+
+      .headers-container-right {
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+
+        .User {
+          font-size: 2rem;
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 483px) {
-    .headers {
-        .headers-container {
+  .headers {
+    .headers-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 0.8rem;
+      width: $movilwidth;
+
+      .headers-container-left {
+        .navbar-headers {
+          ul {
             flex-wrap: wrap;
-            justify-content: flex-start;
-            font-size: 0.8rem;
-            width: $movilwidth;
-            .headers-container-left {
-                .navbar-headers {
-                    ul {
-                        flex-wrap: wrap;
-                        li {
-                            padding: 1.5rem;
-                            margin: auto;
-                        }
-                    }
-                }
+
+            li {
+              padding: 1.5rem;
+              margin: auto;
             }
-            .headers-container-right {
-                margin-left: 15rem;
-                margin-bottom: 2rem;
-                .User {
-                    font-size: 2rem;
-                }
-            }
+          }
         }
+      }
+
+      .headers-container-right {
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+
+        .User {
+          font-size: 2rem;
+        }
+      }
     }
+  }
 }

@@ -1,147 +1,157 @@
 @import 'variables';
 
 .hero {
-    background-color: $primarycolor;
-    background-image: url(../img/logo-header2.png);
-    background-repeat: no-repeat;
-    background-position-x: 10rem;
-    padding: 10rem 0;
-    text-align: center;
+  background-color: $primarycolor;
+  background-image: url(../img/logo-header2.png);
+  background-repeat: no-repeat;
+  background-position-x: 10rem;
+  padding: 10rem 0;
+  text-align: center;
 
-    .hero-title {
-        color: white;
-        margin-bottom: 5rem;
-        width: $desktopwidth;
+  .hero-title {
+    color: white;
+    margin-bottom: 5rem;
+    width: $desktopwidth;
 
-        h1 {
-            font-family: $firstfont;
-            font-size: 7rem;
-        }
-        p {
-            font-family: $thirdfont;
-            font-size: 2.5rem;
-            font-weight: 400;
-        }
+    h1 {
+      font-family: $firstfont;
+      font-size: 7rem;
     }
 
-    .navbar-hero {
-        justify-content: center;
-        align-items: center;
-        width: $desktopwidth;
-        .inputs-hero {
-            margin: 0;
-            height: fit-content;
-            align-items: center;
-            input {
-                padding: 1rem;
-                margin: 0;
-                outline: none;
-                width: 33%;
-            }
-                    .styles-input-hero {
-                        background-color: white;
-                        width: 33%;
-                        height: 100%;
-                        padding: 1.3rem;
-                        margin: 0;
-                        text-decoration: none;
-                        color: $secondarycolor;
-                
-                        i {
-                            color: $thirdcolor;
-                            padding: 0 0.5rem;
-                        }
-                    }
-        }
-
+    p {
+      font-family: $thirdfont;
+      font-size: 2.5rem;
+      font-weight: 400;
     }
+  }
 
+  .navbar-hero {
+    justify-content: center;
+    align-items: center;
+    width: $desktopwidth;
 
+    .inputs-hero {
+      margin: 0;
+      height: fit-content;
+      align-items: center;
 
-    .search-button-hero {
-        margin: 0 0 0 2rem;
-        background-color: $thirdcolor;
-        width: 10rem;
+      input {
+        padding: 1rem;
+        margin: 0;
+        outline: none;
+        width: 33%;
+      }
+
+      .styles-input-hero {
+        background-color: white;
+        width: 33%;
         height: 100%;
         padding: 1.3rem;
+        margin: 0;
         text-decoration: none;
         color: $secondarycolor;
-    }
 
+        i {
+          color: $thirdcolor;
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+
+  .search-button-hero {
+    margin: 0 0 0 2rem;
+    background-color: $thirdcolor;
+    width: 10rem;
+    height: 100%;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: $secondarycolor;
+  }
 }
 
 @media screen and (min-width: 928px) and (max-width: 1440px) {
-    .hero {
-        background-size: 15rem;
-        background-position-x: .8rem;
-        background-position-y: 15%;
-        .hero-title {
-            width: 80%;
-            
-        }
-        .navbar-hero {
-            width: 80%;
-        }
+  .hero {
+    background-size: 15rem;
+    background-position-x: 0.8rem;
+    background-position-y: 15%;
+
+    .hero-title {
+      width: 80%;
     }
+
+    .navbar-hero {
+      width: 80%;
+    }
+  }
 }
 
 @media screen and (min-width: 510px) and (max-width: 927px) {
-    .hero {
-        background-size: 15%;
-        background-position-x: center;
-        .hero-title {
-            width: $movilwidth;
-            text-align: start;
-            h1 {
-                font-size: 5rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-            
-        }
-        .navbar-hero {
-            width: $movilwidth;
-            justify-content: flex-start;
-        }
+  .hero {
+    background-size: 15%;
+    background-position-x: center;
+
+    .hero-title {
+      width: $movilwidth;
+      text-align: start;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
     }
+
+    .navbar-hero {
+      width: $movilwidth;
+      justify-content: flex-start;
+    }
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 509px) {
-    .hero {
-        background-size: 15%;
-        background-position-x: center;
-        .hero-title {
-            width: $movilwidth;
-            text-align: start;
-            h1 {
-                font-size: 5rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-            
-        }
-        .navbar-hero {
-            flex-direction: column;
-            .inputs-hero {
-                flex-direction: column;
-                input {
-                    margin: 1rem;
-                }
-                .styles-input-hero {
-                    width: 80%;
-                }
-                input {
-                    width: 80%;
-                }
-            }
-    
-            .search-button-hero {
-                margin: 1rem;
-                width: 48%;
-            }
-        }
+  .hero {
+    background-size: 15%;
+    background-position-x: center;
+
+    .hero-title {
+      width: $movilwidth;
+      text-align: start;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
     }
 
+    .navbar-hero {
+      flex-direction: column;
+
+      .inputs-hero {
+        flex-direction: column;
+
+        input {
+          margin: 1rem;
+        }
+
+        .styles-input-hero {
+          width: 80%;
+        }
+
+        input {
+          width: 80%;
+        }
+      }
+
+      .search-button-hero {
+        margin: 1rem;
+        width: 48%;
+      }
+    }
+  }
 }

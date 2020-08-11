@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/diazgio/Cosplay-shop-capstone#readme",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "hint": "^6.0.7",
+    "live-server": "^1.2.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2"
   }
 }

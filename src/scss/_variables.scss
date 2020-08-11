@@ -5,30 +5,26 @@ $desktopwidth: 70%;
 //Before 768px
 $movilwidth:100%;
 
-
 // Colors
-$primarycolor: #D35266;
-$secondarycolor: #888888;
+$primarycolor: #d35266;
+$secondarycolor: #888;
 $thirdcolor: #383838;
 $fourthcolor: #fcfcfc;
 $fifthcolor: #f6f6f6;
 $nav_color: rgba(163, 163, 163, 0.7);
-$nav_hover_color: rgb(209, 73, 107, .8);
+$nav_hover_color: rgb(209, 73, 107, 0.8);
 $thirdcolohover: rgb(109, 107, 107);
-
 
 //Typography
 @import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
 @import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
 
-$firstfont: Gotham;
-$Secondfont: Helvetica, sans-serif;
-$thirdfont: Gotham Rounded;
+$firstfont: gotham;
+$Secondfont: helvetica, sans-serif;
+$thirdfont: gotham rounded;
 
 // Slider
 
 $big_width: 70%; 			//Slider width - large display
 $big_height: 40%; 		//Slider height - large display
 $big_nav_width: 4%;	// Previous and Next width - large display
-
-
