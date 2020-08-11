@@ -1,17 +1,28 @@
 @import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
 @import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
-@import url(//db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded);
+
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  /* 10px -> 1rem */
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
 
 .header {
   background-color: #383838;
@@ -53,10 +64,7 @@
   margin: auto 1rem;
 }
 
-.header .navbar-header a:hover {
-  background-color: #6d6b6b;
-  border-radius: 0.4rem;
-}
+
 
 .header .navbar-header .home-header {
   color: #d35266;
@@ -88,6 +96,11 @@
 
 .header .header-container-right .User {
   font-size: 4rem;
+}
+
+.header .navbar-header a:hover {
+  background-color: #6d6b6b;
+  border-radius: 0.4rem;
 }
 
 @media screen and (min-width: 1089px) and (max-width: 1440px) {
@@ -217,18 +230,6 @@
   border-radius: 0.4rem;
 }
 
-.headers .navbar-headers .navbar-items:hover,
-.headers .navbar-headers .home-headers:hover {
-  background-color: #6d6b6b;
-  border-radius: 0.4rem;
-}
-
-.headers .navbar-headers .search-headers:hover {
-  background-color: #d35266;
-  color: white;
-  border-radius: 0.4rem;
-}
-
 .headers .headers-container-left {
   margin-left: 0;
 }
@@ -249,6 +250,18 @@
 
 .headers .headers-container-right .User {
   font-size: 4rem;
+}
+
+.headers .navbar-headers .navbar-items:hover,
+.headers .navbar-headers .home-headers:hover {
+  background-color: #6d6b6b;
+  border-radius: 0.4rem;
+}
+
+.headers .navbar-headers .search-headers:hover {
+  background-color: #d35266;
+  color: white;
+  border-radius: 0.4rem;
 }
 
 @media screen and (min-width: 1089px) and (max-width: 1440px) {
@@ -761,12 +774,6 @@
   font-weight: bold;
 }
 
-.main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  z-index: 10;
-}
-
 .main .styles-section .carrousel .slide_img .prev,
 .main .styles-section .carrousel .slide_img .next {
   width: 4%;
@@ -786,12 +793,6 @@
 
 .main .styles-section .carrousel .slide_img .prev {
   left: 0;
-}
-
-.main .styles-section .carrousel .slide_img .prev:hover,
-.main .styles-section .carrousel .slide_img .next:hover {
-  transition: 0.3s;
-  background-color: rgba(209, 73, 107, 0.8);
 }
 
 .main .styles-section .carrousel .slide_img .prev span,
@@ -850,6 +851,18 @@
 .main .last .carrousel .slide_img .prev,
 .main .last .carrousel .slide_img .next {
   height: 93.5%;
+}
+
+.main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.main .styles-section .carrousel .slide_img .prev:hover,
+.main .styles-section .carrousel .slide_img .next:hover {
+  transition: 0.3s;
+  background-color: rgba(209, 73, 107, 0.8);
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -1081,13 +1094,6 @@
   font-weight: bold;
 }
 
-.footer .info-footer .footer-lists .footer-lists1 .column-list .one-list ul li a:hover {
-  text-decoration: underline;
-  color: #d35266;
-  text-decoration-color: #d35266;
-  font-size: 2.2rem;
-}
-
 .footer .info-footer .footer-lists .column-list {
   margin: 0 2rem;
 }
@@ -1110,13 +1116,6 @@
   color: #888;
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.footer .info-footer .footer-lists .column-list .one-list ul li a:hover {
-  text-decoration: underline;
-  color: #d35266;
-  text-decoration-color: #d35266;
-  font-size: 2.2rem;
 }
 
 .footer .info-footer .footer-lists .last-list {
@@ -1158,13 +1157,6 @@
   width: 50%;
 }
 
-.footer .info-footer .footer-lists .last-list .twopoint-list ul li .a-two:hover {
-  font-size: 2.2rem;
-  background-color: #383838;
-  text-decoration: underline;
-  color: #d35266;
-}
-
 .footer .info-footer .footer-lists-tow {
   display: none;
 }
@@ -1191,6 +1183,27 @@
   padding: 1rem;
   font-size: 4rem;
   color: #888;
+}
+
+.footer .info-footer .footer-lists .footer-lists1 .column-list .one-list ul li a:hover {
+  text-decoration: underline;
+  color: #d35266;
+  text-decoration-color: #d35266;
+  font-size: 2.2rem;
+}
+
+.footer .info-footer .footer-lists .column-list .one-list ul li a:hover {
+  text-decoration: underline;
+  color: #d35266;
+  text-decoration-color: #d35266;
+  font-size: 2.2rem;
+}
+
+.footer .info-footer .footer-lists .last-list .twopoint-list ul li .a-two:hover {
+  font-size: 2.2rem;
+  background-color: #383838;
+  text-decoration: underline;
+  color: #d35266;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -1492,12 +1505,6 @@
   padding: 0 1rem;
 }
 
-.main-search .main-search-container .results .results-item .results-item-img:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  z-index: 10;
-}
-
 .main-search .main-search-container .results .results-item .results-item-description {
   padding: 1rem;
   position: relative;
@@ -1528,12 +1535,6 @@
   padding: 1rem;
   border: 1px solid #888;
   margin: 1rem;
-}
-
-.main-search .main-search-container .results .results-item .results-item-description .plus:hover i {
-  background-color: #383838;
-  color: #d35266;
-  cursor: pointer;
 }
 
 .main-search .main-search-container .results .results-item .results-item-description .results-text {
@@ -1583,6 +1584,18 @@
   background-color: #d35266;
   padding: 1rem 1.5rem;
   border-radius: 0.4rem;
+}
+
+.main-search .main-search-container .results .results-item .results-item-img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.main-search .main-search-container .results .results-item .results-item-description .plus:hover i {
+  background-color: #383838;
+  color: #d35266;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -1735,24 +1748,3 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-
-  /* 10px -> 1rem */
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
