@@ -3,6 +3,30 @@
 .footer {
   background-color: white;
 
+  .copy-right-footer {
+    width: $desktopwidth;
+    border-top: 1px solid $secondarycolor;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    .letters-footer {
+      margin: 0 0 0 5rem;
+      font-size: 1.7rem;
+      color: $secondarycolor;
+    }
+
+    .social-links {
+      margin: 0 5rem 0 0;
+
+      a {
+        padding: 1rem;
+        font-size: 4rem;
+        color: $secondarycolor;
+      }
+    }
+  }
+
   .info-footer {
     width: $desktopwidth;
     border-top: 1px solid $secondarycolor;
@@ -32,42 +56,6 @@
       margin: 0;
       padding: 2rem 0;
       margin-right: 5rem;
-
-      .footer-lists1 {
-        .column-list {
-          margin: 0 2rem;
-          width: 25%;
-
-          .title-list {
-            color: $primarycolor;
-            border-bottom: 2px solid $primarycolor;
-          }
-
-          .one-list {
-            ul {
-              list-style: none;
-
-              li {
-                padding: 1rem 0;
-
-                a {
-                  text-decoration: none;
-                  color: $secondarycolor;
-                  font-size: 1.5rem;
-                  font-weight: bold;
-                }
-
-                a:hover {
-                  text-decoration: underline;
-                  color: $primarycolor;
-                  text-decoration-color: $primarycolor;
-                  font-size: 2.2rem;
-                }
-              }
-            }
-          }
-        }
-      }
 
       .column-list {
         margin: 0 2rem;
@@ -151,6 +139,42 @@
           }
         }
       }
+
+      .footer-lists1 {
+        .column-list {
+          margin: 0 2rem;
+          width: 25%;
+
+          .title-list {
+            color: $primarycolor;
+            border-bottom: 2px solid $primarycolor;
+          }
+
+          .one-list {
+            ul {
+              list-style: none;
+
+              li {
+                padding: 1rem 0;
+
+                a {
+                  text-decoration: none;
+                  color: $secondarycolor;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                }
+
+                a:hover {
+                  text-decoration: underline;
+                  color: $primarycolor;
+                  text-decoration-color: $primarycolor;
+                  font-size: 2.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .footer-lists-tow {
@@ -158,29 +182,7 @@
     }
   }
 
-  .copy-right-footer {
-    width: $desktopwidth;
-    border-top: 1px solid $secondarycolor;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0;
-
-    .letters-footer {
-      margin: 0 0 0 5rem;
-      font-size: 1.7rem;
-      color: $secondarycolor;
-    }
-
-    .social-links {
-      margin: 0 5rem 0 0;
-
-      a {
-        padding: 1rem;
-        font-size: 4rem;
-        color: $secondarycolor;
-      }
-    }
-  }
+  
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
