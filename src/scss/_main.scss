@@ -254,7 +254,7 @@
           position: absolute;
           width: 0;
           height: 0;
-          border: solid 20px;
+          border: solid 2rem;
           top: 50%;
           transform: translateY(-50%);
         }
@@ -504,6 +504,9 @@
           .carrousel-container {
             .item-carrousel {
               width: 35%;
+              img {
+                height: 15rem
+              }
             }
 
             .media3 {
@@ -518,8 +521,15 @@
               display: none;
             }
           }
+          .prev span,
+          .next span {
+            border: solid .8rem;
+            border-color: transparent transparent transparent #383838;
+          }
         }
       }
+
+      
     }
   }
 }
@@ -595,6 +605,11 @@
             .media1 {
               display: none;
             }
+          }
+          .prev span,
+          .next span {
+            border: solid .8rem;
+            border-color: transparent transparent transparent #383838;
           }
         }
       }
