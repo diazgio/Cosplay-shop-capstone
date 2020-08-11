@@ -11,7 +11,6 @@
 
 html {
   font-size: 62.5%;
-
   /* 10px -> 1rem */
 }
 
@@ -22,7 +21,6 @@ html {
 .grid {
   display: grid;
 }
-
 
 .header {
   background-color: #383838;
@@ -64,10 +62,12 @@ html {
   margin: auto 1rem;
 }
 
-
-
 .header .navbar-header .home-header {
   color: #d35266;
+}
+
+.headers .navbar-headers .navbar-items {
+  color: #888;
 }
 
 .header .navbar-header .navbar-items,
@@ -86,7 +86,18 @@ html {
   margin-right: 0;
 }
 
-.header .header-container-right a,
+.headers .navbar-headers a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.headers .headers-container-right a {
+  padding: 0 1rem;
+  color: #888;
+  text-decoration: none;
+}
+
+
 .header .header-container-right a:visited,
 .header .header-container-right a:link {
   padding: 0 1rem;
@@ -197,11 +208,6 @@ html {
   text-transform: uppercase;
 }
 
-.headers .navbar-headers a {
-  text-decoration: none;
-  padding: 1rem;
-}
-
 .headers .navbar-headers ul {
   list-style: none;
 }
@@ -218,7 +224,6 @@ html {
   color: #d35266;
 }
 
-.headers .navbar-headers .navbar-items,
 .headers .navbar-headers .navbar-items:visited,
 .headers .navbar-headers .navbar-items:link {
   color: #888;
@@ -240,7 +245,7 @@ html {
   margin-right: 0;
 }
 
-.headers .headers-container-right a,
+
 .headers .headers-container-right a:visited,
 .headers .headers-container-right a:link {
   padding: 0 1rem;
@@ -386,6 +391,19 @@ html {
   color: #888;
 }
 
+.main .hot-ads .hot-arrow i {
+  color: #d35266;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main .styles-section .title-section h2 i {
+  padding-right: 1rem;
+}
+
 .hero .navbar-hero .inputs-hero .styles-input-hero i {
   color: #383838;
   padding: 0 0.5rem;
@@ -469,16 +487,13 @@ html {
     flex-direction: column;
   }
 
+   .hero .navbar-hero .inputs-hero .styles-input-hero {
+    width: 80%;
+  }
+
   .hero .navbar-hero .inputs-hero input {
+    width: 80%;
     margin: 1rem;
-  }
-
-  .hero .navbar-hero .inputs-hero .styles-input-hero {
-    width: 80%;
-  }
-
-  .hero .navbar-hero .inputs-hero input {
-    width: 80%;
   }
 
   .hero .navbar-hero .search-button-hero {
@@ -516,15 +531,6 @@ html {
   border: 1px solid #888;
   border-radius: 50%;
   position: relative;
-}
-
-.main .hot-ads .hot-arrow i {
-  color: #d35266;
-  font-size: 3.5rem;
-  position: absolute;
-  top: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .main .hot-ads .hot-ads-info {
@@ -623,6 +629,17 @@ html {
   display: none;
 }
 
+.main .styles-section .View-title a:visited,
+.main .styles-section .View-title a:link {
+  color: #d35266;
+}
+
+.main .styles-section .View-title a {
+  text-decoration: none;
+  color: #d35266;
+  font-family: Gotham;
+}
+
 .main .hot-ads .hot-ads-info .hot-description .buttons-description .plus a {
   text-decoration: none;
 }
@@ -667,10 +684,6 @@ html {
   font-size: 1.7rem;
 }
 
-.main .styles-section .title-section h2 i {
-  padding-right: 1rem;
-}
-
 .main .styles-section .title-section p {
   margin: 0 0.5rem;
   color: #888;
@@ -681,17 +694,6 @@ html {
   justify-content: flex-end;
   align-items: center;
   margin: 0;
-}
-
-.main .styles-section .View-title a {
-  text-decoration: none;
-  color: #d35266;
-  font-family: Gotham;
-}
-
-.main .styles-section .View-title a:visited,
-.main .styles-section .View-title a:link {
-  color: #d35266;
 }
 
 .main .styles-section .carrousel {
@@ -742,6 +744,21 @@ html {
   color: #d35266;
   font-weight: bold;
   margin: 0.5rem 0;
+}
+
+.main .styles-section .carrousel .slide_img .prev span,
+.main .styles-section .carrousel .slide_img .next span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main .styles-section .carrousel .slide_img .next span {
+  border-color: transparent transparent transparent #383838;
+  left: 35%;
 }
 
 .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel .carrousel-description span {
@@ -795,24 +812,9 @@ html {
   left: 0;
 }
 
-.main .styles-section .carrousel .slide_img .prev span,
-.main .styles-section .carrousel .slide_img .next span {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: solid 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .main .styles-section .carrousel .slide_img .prev span {
   border-color: transparent #383838 transparent transparent;
   right: 35%;
-}
-
-.main .styles-section .carrousel .slide_img .next span {
-  border-color: transparent transparent transparent #383838;
-  left: 35%;
 }
 
 .main .styles-section .carrousel #i1:checked ~ #one,
@@ -1747,4 +1749,3 @@ html {
     display: none;
   }
 }
-
