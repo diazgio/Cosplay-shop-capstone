@@ -254,7 +254,7 @@
           position: absolute;
           width: 0;
           height: 0;
-          border: solid 2rem;
+          border: solid 1rem;
           top: 50%;
           transform: translateY(-50%);
         }
@@ -498,6 +498,7 @@
 
     .styles-section {
       width: $movilwidth;
+      padding: 3rem 0 5rem;
 
       .carrousel {
         .slide_img {
@@ -505,8 +506,10 @@
             .item-carrousel {
               width: 35%;
 
-              img {
-                height: 15rem;
+              .img-carrousel {
+                img {
+                  height: 15rem;
+                }
               }
             }
 
@@ -580,6 +583,7 @@
 
     .styles-section {
       width: $movilwidth;
+      padding: 3rem 0 5rem;
 
       .carrousel {
         .slide_img {

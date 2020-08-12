@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 509px) {
+@media screen and (min-width: 200px) and (max-width: 509px) {
   .hero-search {
     .navbar-hero-search {
       flex-direction: column;
@@ -113,11 +113,17 @@
 
         input {
           margin: 1rem;
+          width: 80%;
+        }
+
+        .styles-input-hero {
+          width: 80%;
         }
       }
 
       .search-button-hero {
         margin: 1rem;
+        width: 48%;
       }
     }
   }

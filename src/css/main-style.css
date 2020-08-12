@@ -354,7 +354,7 @@
     justify-content: flex-start;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 509px) {
+@media screen and (min-width: 200px) and (max-width: 509px) {
   .hero {
     background-size: 15%;
     background-position-x: center;
@@ -602,7 +602,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  border: solid 2rem;
+  border: solid 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -771,11 +771,12 @@
   }
   .main .styles-section {
     width: 100%;
+    padding: 3rem 0 5rem;
   }
   .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel {
     width: 35%;
   }
-  .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel img {
+  .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel .img-carrousel img {
     height: 15rem;
   }
   .main .styles-section .carrousel .slide_img .carrousel-container .media3 {
@@ -824,6 +825,7 @@
   }
   .main .styles-section {
     width: 100%;
+    padding: 3rem 0 5rem;
   }
   .main .styles-section .carrousel .slide_img .carrousel-container .item-carrousel {
     width: 35%;
@@ -1144,7 +1146,7 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 509px) {
+@media screen and (min-width: 200px) and (max-width: 509px) {
   .hero-search .navbar-hero-search {
     flex-direction: column;
   }
@@ -1153,9 +1155,14 @@
   }
   .hero-search .navbar-hero-search .inputs-hero input {
     margin: 1rem;
+    width: 80%;
+  }
+  .hero-search .navbar-hero-search .inputs-hero .styles-input-hero {
+    width: 80%;
   }
   .hero-search .navbar-hero-search .search-button-hero {
     margin: 1rem;
+    width: 48%;
   }
 }
 .main-search {
@@ -1197,6 +1204,17 @@
   margin: 1rem 0;
   font-size: 1.2rem;
 }
+.main-search .main-search-container .filters .filters-control .movilFilter {
+  display: none;
+  padding: 1.5rem;
+}
+.main-search .main-search-container .filters .filters-control .movilFilter input {
+  margin: 1rem 1rem;
+}
+.main-search .main-search-container .filters .filters-control .movilFilter label {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
 .main-search .main-search-container .results {
   margin: 0;
   width: 80%;
@@ -1211,6 +1229,17 @@
 }
 .main-search .main-search-container .results .results-item {
   margin-bottom: 5rem;
+}
+.main-search .main-search-container .results .results-item .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-search .main-search-container .results .results-item .plus i {
+  color: #888;
+  padding: 1rem;
+  border: 1px solid #888;
+  margin: 1rem;
 }
 .main-search .main-search-container .results .results-item .results-item-img {
   position: relative;
@@ -1250,17 +1279,6 @@
   color: #d35266;
   font-size: 1.5rem;
   font-family: gotham;
-}
-.main-search .main-search-container .results .results-item .results-item-description .plus {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.main-search .main-search-container .results .results-item .results-item-description .plus i {
-  color: #888;
-  padding: 1rem;
-  border: 1px solid #888;
-  margin: 1rem;
 }
 .main-search .main-search-container .results .results-item .results-item-description .plus:hover i {
   background-color: #383838;
@@ -1368,6 +1386,19 @@
   .main-search .main-search-container {
     width: 100%;
   }
+  .main-search .main-search-container .filters .filters-control .desktopFilter {
+    display: none;
+  }
+  .main-search .main-search-container .filters .filters-control .movilFilter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+  .main-search .main-search-container .filters .filters-control .price .movilFilter {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid;
+  }
   .main-search .main-search-container .results .results-item {
     flex-direction: column;
     align-items: center;
@@ -1406,6 +1437,24 @@
     font-size: 1rem;
     padding: 1rem 0.5rem;
     margin: 0;
+  }
+  .main-search .main-search-container .filters .filters-control .gender,
+.main-search .main-search-container .filters .filters-control .size,
+.main-search .main-search-container .filters .filters-control .price {
+    padding: 1.5rem 0;
+  }
+  .main-search .main-search-container .filters .filters-control .desktopFilter {
+    display: none;
+  }
+  .main-search .main-search-container .filters .filters-control .movilFilter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+  .main-search .main-search-container .filters .filters-control .price .movilFilter {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid;
   }
   .main-search .main-search-container .results {
     width: 75%;

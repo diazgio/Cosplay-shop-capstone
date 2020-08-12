@@ -40,6 +40,20 @@
             font-size: 1.2rem;
           }
         }
+
+        .movilFilter {
+          display: none;
+          padding: 1.5rem;
+
+          input {
+            margin: 1rem 1rem;
+          }
+
+          label {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+          }
+        }
       }
     }
 
@@ -282,6 +296,28 @@
     .main-search-container {
       width: $movilwidth;
 
+      .filters {
+        .filters-control {
+          .desktopFilter {
+            display: none;
+          }
+
+          .movilFilter {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+          }
+
+          .price {
+            .movilFilter {
+              flex-direction: column-reverse;
+              border-bottom: 1px solid;
+            }
+          }
+        }
+      }
+
       .results {
         .results-item {
           flex-direction: column;
@@ -341,6 +377,30 @@
             font-size: 1rem;
             padding: 1rem 0.5rem;
             margin: 0;
+          }
+
+          .gender,
+          .size,
+          .price {
+            padding: 1.5rem 0;
+          }
+
+          .desktopFilter {
+            display: none;
+          }
+
+          .movilFilter {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+          }
+
+          .price {
+            .movilFilter {
+              flex-direction: column-reverse;
+              border-bottom: 1px solid;
+            }
           }
         }
       }
