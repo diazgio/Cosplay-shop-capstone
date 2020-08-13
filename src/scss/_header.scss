@@ -1,0 +1,159 @@
+@import 'variables';
+
+.header {
+  background-color: $thirdcolor;
+  font-family: $Secondfont;
+
+  .header-container {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    width: $desktopwidth;
+  }
+
+  .logo-header {
+    align-items: center;
+
+    .logo-img {
+      width: 12rem;
+      height: 6rem;
+      margin: 1rem;
+    }
+  }
+
+  .header-container-left {
+    margin-left: 0;
+  }
+
+  .header-container-right {
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+
+    a {
+      padding: 0 1rem;
+      color: $secondarycolor;
+      text-decoration: none;
+    }
+
+    .User {
+      font-size: 4rem;
+    }
+  }
+
+  .navbar-header {
+    align-items: center;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: auto 1rem;
+    }
+
+    .home-header {
+      color: $primarycolor;
+    }
+
+    .navbar-items,
+    .navbar-items:visited,
+    .navbar-items:link {
+      color: $secondarycolor;
+    }
+
+    a:hover {
+      background-color: $thirdcolohover;
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1089px) and (max-width: 1440px) {
+  .header {
+    .header-container {
+      font-size: 1.3rem;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1088px) {
+  .header {
+    .header-container {
+      font-size: 1rem;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 483px) and (max-width: 767px) {
+  .header {
+    .header-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 0.8rem;
+      width: $movilwidth;
+
+      .header-container-left {
+        .navbar-header {
+          ul {
+            flex-wrap: wrap;
+
+            li {
+              padding-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .header-container-right {
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+
+        .User {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .header {
+    .header-container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 0.8rem;
+      width: $movilwidth;
+
+      .header-container-left {
+        .navbar-header {
+          ul {
+            flex-wrap: wrap;
+
+            li {
+              padding: 1.5rem;
+              margin: auto;
+            }
+          }
+        }
+      }
+
+      .header-container-right {
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+
+        .User {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import 'variables';
+
+.hero-search {
+  background-color: $primarycolor;
+  background-image: url(../img/logo-header.png);
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-position-x: 10rem;
+  padding: 3rem 0;
+  text-align: center;
+
+  .hero-search-title {
+    color: white;
+    margin-bottom: 3rem;
+    width: $desktopwidth;
+    text-align: start;
+
+    h1 {
+      font-family: $firstfont;
+      font-size: 5rem;
+    }
+
+    p {
+      font-family: $thirdfont;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .navbar-hero-search {
+    justify-content: flex-start;
+    align-items: center;
+    width: $desktopwidth;
+
+    .inputs-hero {
+      margin: 0;
+      height: fit-content;
+      align-items: center;
+      width: $desktopwidth;
+
+      .styles-input-hero {
+        background-color: white;
+        width: 33%;
+        height: 100%;
+        padding: 1.3rem;
+        margin: 0;
+        text-decoration: none;
+        color: $secondarycolor;
+
+        i {
+          color: $thirdcolor;
+          padding: 0 0.5rem;
+        }
+      }
+
+      input {
+        padding: 1rem;
+        margin: 0;
+        outline: none;
+        width: 33%;
+      }
+    }
+
+    .search-button-hero {
+      margin: 0 0 0 auto;
+      background-color: $thirdcolor;
+      width: 10rem;
+      height: 100%;
+      padding: 1.3rem;
+      text-decoration: none;
+      color: $secondarycolor;
+    }
+  }
+}
+
+@media screen and (min-width: 928px) and (max-width: 1440px) {
+  .hero-search {
+    background-size: 20rem;
+    background-position-x: 0.8rem;
+
+    .hero-search-title {
+      width: 80%;
+    }
+
+    .navbar-hero-search {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 510px) and (max-width: 927px) {
+  .hero-search {
+    background-size: 20rem;
+    background-position-x: 0.8rem;
+
+    .hero-search-title {
+      width: $movilwidth;
+    }
+
+    .navbar-hero-search {
+      width: $movilwidth;
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 509px) {
+  .hero-search {
+    .navbar-hero-search {
+      flex-direction: column;
+
+      .inputs-hero {
+        flex-direction: column;
+
+        input {
+          margin: 1rem;
+          width: 80%;
+        }
+
+        .styles-input-hero {
+          width: 80%;
+        }
+      }
+
+      .search-button-hero {
+        margin: 1rem;
+        width: 48%;
+      }
+    }
+  }
+}
